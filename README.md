@@ -8,7 +8,7 @@
 ```
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
 ```
-Для полуавтоматического деплоя используется `cookyii/build`. Установить cookyii/build` не составляет труда.
+Для полуавтоматического деплоя используется `cookyii/build`. Установить `cookyii/build` не составляет труда.
 Для этого необходимо выполнить команду
 ```bash
 composer global require cookyii/build:dev-master
