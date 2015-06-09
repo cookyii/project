@@ -1,57 +1,89 @@
-# Каркас Cookie CMF
+Каркас проекта Cookie CMF
+=========================
 
-## Подготовка окружения
+`cookyii/project` это каркас приложения [Yii 2](http://www.yiiframework.com/)
+оптимизированный под горизонтальное масштабирование приложения.
+
+Каркас включает базовые функции для работы cms,
+а так же предоставляет инфраструктуры для разработки и ряд дополнительных модулей,
+реализующий ту или иную функциональность.
+
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
+
+
+Структура директорий
+--------------------
+
+    backend-app/           общий код приложения backend
+    backend-modules/       модули приложения backend
+    common/                общие компоненты для всех приложений
+    frontend-app/          общий код приложения frontend
+    frontend-modules/      модули приложения frontend
+    messages/              переводы приложений для всех приложений
+    resources/             общие ресурсы (модели) для всех приложений
+    runtime/               общие временны данные для всех приложений
+    vendor/                пакеты сторонних разработчиков
+
+
+
+Системные требования
+--------------------
+
+Минимальным требованием для работы этого каркаса является наличие PHP 5.5.0 или выше.
+
+
+Установка
+---------
 
 Для начала необходимо установить `nodejs` и `npm`. Установка описана на [GitHub](https://github.com/joyent/node/wiki/Installation).
 
-Для обработки bower пакетов, в системе требуется глобально установить пакет `fxp/composer-asset-plugin`. Делается это командой
-```
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
-```
-Для полуавтоматического деплоя используется `cookyii/build`. Установить `cookyii/build` не составляет труда.
-Для этого необходимо выполнить команду
+Если у Вас не установлен [Composer](http://getcomposer.org/), вы должны установить его.
+Информацию об этом Вы можете получить на сайте [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+
+### Установка через `composer`
+
+Установить этот шаблон проекта Вы можете выполнив следующую команду:
+
 ```bash
-composer global require cookyii/build:dev-master
+composer global require "fxp/composer-asset-plugin:~1.0.0"
+composer global require "cookyii/build:dev-master"
+composer create-project --prefer-dist --stability=dev cookyii/project new-project
 ```
 
-Незабывайте периодически обновлять `cookyii/build` выполняя команду
-```bash
-composer global update cookyii/build
+Далее Вам следует настроить виртуальные хосты Вашего Web сервера на следующие директории:
+
+```
+www.new-project.com      ->  .../frontend-app/web
+backend.new-project.com  ->  .../backend-app/web
 ```
 
-## Деплой
 
-Document root:
-* Frontend - `./frontend-app/web`
-* Backend - `./backend-app/web`
+Развертывание Вашего проекта (deploy)
+-------------------------------------
 
-1. Клонировать проект через git.
-2. Скопировать файл `.env.dist` в `.env`, заполнить необходимые данные.
-3. Скопировать файл `.credentials.env.dist` в `.credentials.env`, заполнить необходимые данные.
-4. Установить зависимости через композер `./composer.phar install --prefer-dist` (если нет композера, установить через `./getcomposer`).
-5. Развернуть миграции `./frontend migrate`, `./backend migrate`.
-6. Установить frontend зависимости через npm `npm install`.
+1. Скопировать файл `.env.dist` в `.env`, заполнить необходимые данные.
+2. Скопировать файл `.credentials.env.dist` в `.credentials.env`, заполнить необходимые данные.
+3. Установить `composer` зависимости `./build composer install-dev`. (для продакшена `./build composer install`)
+4. Установить `frontend` зависимости через npm `./build npm`.
+5. Скомпилировать `less` стили `./build less`.
+6. Развернуть миграции `./build migrate`.
+7. Обновить `rbac` правила `./build rbac`.
 
-Система готова к эксплуатации.
 
-## Обновление
+Настройка
+---------
 
-1. Обновить кодовую базу через git
-2. Обновить композер `./composer.phar selfupdate`
-3. Обновить зависимости через композер `./composer.phar install --prefer-dist`
-4. Развернуть новые миграции `./web migrate`, `./backend migrate`, `./crm migrate`.
-5. Оновить frontend зависимости через npm `npm update`
+Вы можете изменять любые настройки в директориях `./common/config/`, `./frontend-app/config/`, `./backend-app/config/` и в конфигурации билда проекта.
 
-Система готова к эксплуатации.
 
-## Полуавтоматический деплой и обновление
+Доступные команды `./build`
+---------------------------
 
-Сначала потребуется скачать обновление из гита командой `git pull`, затем выполнить одну из команд:
-* `./build set/production` - собрать проект для продакшена.
+* `./build` или `./build set/dev` - собрать проект для dev площадки.
 * `./build set/demo` - собрать проект для demo площадки.
-* `./build set/dev` - собрать проект для dev площадки.
+* `./build set/production` - собрать проект для продакшена.
 
-Дополнительно доступны следующие команды (они выполняются в рамках `build/*` команд, и сюда добавлены только для справки):
+Дополнительно доступны следующие команды (они выполняются в рамках `set/*` команд, и сюда добавлены только для справки):
 * `./build map` - показать список всех команд.
 * `./build clear` - удалить все временные файлы и логи во всех приложениях.
 * `./build clear/*` - удалить все временные файлы и логи в конкретном приложении.
@@ -64,27 +96,3 @@ Document root:
 * `./build composer/selfupdate` - обновить `composer`.
 * `./build rbac` - обновить правила `rbac` для всех приложений.
 * `./build rbac/*` - обновить правила `rbac` для конкретного приложения.
-
-## Основные моменты
-
-За основу каркаса взят `yii2-advance-application`.
-Он позволяет создавать комплекс из разных приложений с разными подходами
-(обычное `web` приложение, `cli` приложение, `rest` приложение).
-
-На данный момент, в проекте созданны следующие приложения:
-* `frontend-app` - основное web приложение.
-* `backend-app` - приложение для панели управления.
-
-## Структура директорий
-
-```
-backend-app/           общий код приложения backend
-backend-modules/       модули приложения backend
-common/                общие компоненты для всех приложений
-frontend-app/          общий код приложения frontend
-frontend-modules/      модули приложения frontend
-messages/              переводы приложений для всех приложений
-resources/             общие ресурсы (модели) для всех приложений
-runtime/               общие временны данные для всех приложений
-vendor/                пакеты сторонних разработчиков
-```
