@@ -21,9 +21,9 @@ composer global update cookyii/build
 
 ## Деплой
 
-Document root -
-* Web - `~/web-app/web`
-* Backend - `~/backend-app/web`
+Document root:
+* Frontend - `./frontend-app/web`
+* Backend - `./backend-app/web`
 
 1. Клонировать проект через git.
 2. Скопировать файл `.env.dist` в `.env`, заполнить необходимые данные.
