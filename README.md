@@ -16,7 +16,7 @@ composer global require cookyii/build:dev-master
 
 Незабывайте периодически обновлять `cookyii/build` выполняя команду
 ```bash
-composer global update cookyii/build:dev-master
+composer global update cookyii/build
 ```
 
 ## Деплой
