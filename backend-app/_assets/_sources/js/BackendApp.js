@@ -2,10 +2,9 @@
   "use strict";
 
   ng.module('BackendApp', [
-    'ngSanitize',
-    'ngMaterial',
+    'ngSanitize', 'ngResource', 'ngMaterial',
     'ui.bootstrap',
-    'angular-loading-bar'
+    'angular-loading-bar', 'truncate', 'monospaced.elastic', 'angular-redactor'
   ])
 
     .config([
@@ -20,7 +19,16 @@
           //      @todo конфликт с http auth сервера
         }
 
-        $mdThemingProvider.theme('default');
+        var deepPurpleTheme = $mdThemingProvider.extendPalette('deep-purple', {
+          '400': '555299'
+        });
+
+        $mdThemingProvider.definePalette('deep-purple-theme', deepPurpleTheme);
+
+        $mdThemingProvider.theme('default')
+          .accentPalette('deep-purple-theme', {
+            'default': '400'
+          });
       }
     ]);
 

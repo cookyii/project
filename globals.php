@@ -1,7 +1,7 @@
 <?php
 /**
  * globals.php
- * @author Revin Roman http://phptime.ru
+ * @author Revin Roman
  */
 
 @umask(0002);
@@ -125,7 +125,7 @@ function Mailer()
 }
 
 /**
- * @return \yii\rbac\ManagerInterface
+ * @return \yii\rbac\DbManager
  */
 function AuthManager()
 {
@@ -180,4 +180,25 @@ function nulled($value)
 function str_clean($str)
 {
     return trim(preg_replace('/(\r?\n){2,}/', "\n\n", strip_tags($str)));
+}
+
+/**
+ * @param string $email
+ * @param integer $size
+ * @return string
+ */
+function gravatar($email, $size)
+{
+    $hash = md5(strtolower(trim($email)));
+
+    $size = $size < 0 ? 10 : $size;
+    $size = $size > 1000 ? 1000 : $size;
+
+    $query = [
+        's' => $size,
+        'd' => 'mm',
+        'r' => 'g',
+    ];
+
+    return sprintf('http://www.gravatar.com/avatar/%s?%s', $hash, http_build_query($query));
 }

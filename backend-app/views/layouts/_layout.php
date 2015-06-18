@@ -36,22 +36,23 @@ $this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch
 
 $this->registerLinkTag([
     'rel' => 'stylesheet',
-    'href' => '//fonts.googleapis.com/css?family=Open+Sans:200,400,700&subset=latin,cyrillic'
+    'href' => '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic'
 ]);
 
 $this->beginPage();
 
 ?><!DOCTYPE html>
-<?= Html::beginTag('html', [
+<html <?= Html::renderTagAttributes([
     'lang' => Yii::$app->language,
     'ng-app' => 'BackendApp',
-]) ?>
+]) ?>>
 <head>
     <!--[if IE]>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
-    <?
+    <?php
+
     echo Html::csrfMetaTags();
     echo Html::tag('title', $title);
 
@@ -61,14 +62,15 @@ $this->beginPage();
     }
 
     $this->head()
+
     ?>
 </head>
-<body>
-<? $this->beginBody() ?>
+<body class="sidebar-mini skin-purple">
+<?php
 
-<?
+$this->beginBody();
 
-if ($controller->hideLoader === false) {
+if ($controller->loader === true) {
     echo Html::tag('div', '<md-progress-circular class="md-warn md-hue-3" md-mode="indeterminate"></md-progress-circular>', [
         'id' => 'global-loader',
         'class' => 'loader-layout',
@@ -77,7 +79,13 @@ if ($controller->hideLoader === false) {
     ]);
 }
 
-echo $content;
+?>
+<div class="wrapper">
+    <?php
+    echo $content;
+    ?>
+</div>
+<?php
 
 $this->endBody();
 
@@ -86,6 +94,6 @@ echo $this->render('_toast');
 ?>
 
 </body>
-</html><?
+</html><?php
 
 $this->endPage();

@@ -32,10 +32,10 @@ class SiteController extends \backend\components\Controller
     }
 
     /**
-     * @throws \yii\web\NotFoundHttpException
+     * @return \yii\web\Response
      */
     public function actionIndex()
     {
-        throw new \yii\web\ServerErrorHttpException('Under construction');
+        return $this->redirect(['/dash']);
     }
 }

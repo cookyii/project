@@ -13,11 +13,11 @@ namespace backend\components;
 class Controller extends \yii\web\Controller
 {
 
-    public $hideLoader = false;
+    public $loader = true;
+
+    public $layout = '//main';
 
     public $public = false;
-
-    public $layout = 'main';
 
     /**
      * @inheritdoc
@@ -31,6 +31,28 @@ class Controller extends \yii\web\Controller
             Cache('authManager')->flush();
             Cache('schema')->flush();
             Cache('query')->flush();
+        }
+
+        if (!$this->public) {
+            if (User()->isGuest) {
+                User()->loginRequired();
+            } else {
+                /** @var \resources\Account $Account */
+                $Account = User()->identity;
+
+                if (($reason = $Account->isAvailable()) !== true) {
+                    switch ($reason) {
+                        case 'not-activated':
+                            throw new \yii\web\ForbiddenHttpException('You account is not activated.');
+                        case 'deleted':
+                            throw new \yii\web\ForbiddenHttpException('You account removed.');
+                    }
+                }
+
+                if (!User()->can(\backend\Permissions::ACCESS)) {
+                    throw new \yii\web\ForbiddenHttpException('Access denied.');
+                }
+            }
         }
     }
 }

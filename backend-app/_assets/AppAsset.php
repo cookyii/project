@@ -21,6 +21,7 @@ class AppAsset extends \yii\web\AssetBundle
     ];
 
     public $js = [
+        'js/app.js',
         'js/functions.js',
         'js/scripts.js',
         'js/BackendApp.js',
@@ -36,6 +37,10 @@ class AppAsset extends \yii\web\AssetBundle
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset',
         'rmrevin\yii\fontawesome\CDNAssetBundle',
+        'rmrevin\yii\imperavi\AssetBundle',
+        'rmrevin\yii\imperavi\plugins\FileManagerPluginAssetBundle',
+        'rmrevin\yii\imperavi\plugins\ImageManagerPluginAssetBundle',
+        'rmrevin\yii\imperavi\plugins\FullScreenPluginAssetBundle',
         'common\_assets\AnimateCssAssetBundle',
         'common\_assets\SweetAlertAssetBundle',
         'common\_assets\AngularAssetBundle',

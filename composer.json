@@ -10,8 +10,6 @@
   ],
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
-  "minimum-stability": "stable",
-  "prefer-stable": true,
   "authors": [
     {
       "name": "Revin Roman",
@@ -24,21 +22,29 @@
     "issues": "https://github.com/cookyii/project/issues?state=open",
     "source": "https://github.com/cookyii/project"
   },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
   "require": {
-    "php": ">=5.5.0",
+    "php": ">=5.4.0",
 
-    "cookyii/build": "dev-master",
+    "cookyii/base": "dev-master",
+    "cookyii/module-account": "dev-master",
+    "cookyii/module-page": "dev-master",
+    "cookyii/module-media": "dev-master",
 
-    "yiisoft/yii2": "2.0.*",
+    "yiisoft/yii2": "2.0.4",
     "yiisoft/yii2-composer": "2.0.*",
     "yiisoft/yii2-bootstrap": "2.0.*",
     "yiisoft/yii2-imagine": "2.0.*",
+    "yiisoft/yii2-authclient": "2.0.*",
+    "yiisoft/yii2-swiftmailer": "2.0.*",
 
     "rmrevin/yii2-fontawesome": "2.10.*",
     "rmrevin/yii2-socicon": "1.0.*",
     "rmrevin/yii2-minify-view": "1.8.*",
     "rmrevin/yii2-rbac-command": "1.1.*",
     "rmrevin/yii2-power-migration": "1.1.*",
+    "rmrevin/yii2-imperavi-bundle": "1.0.*",
 
     "vlucas/phpdotenv": "2.0.*"
   },
@@ -52,7 +58,9 @@
     "codeception/verify": "0.2.*"
   },
   "autoload": {
-    "psr-4": {"cookyii\\": ""}
+    "psr-4": {
+      "resources\\": "./resources"
+    }
   },
   "extra": {
     "asset-installer-paths": {

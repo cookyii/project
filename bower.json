@@ -5,13 +5,17 @@
   "license": "BSD-3-Clause",
   "private": true,
   "resolutions": {
-    "angular": "1.4.0"
+    "angular": "1.4.1"
   },
   "dependencies": {
     "angular": "1.4.*",
+    "angular-resource": "1.4.*",
+    "angular-material": "0.9.*",
     "angular-redactor": "1.1.*",
     "angular-scroll-pane": "1.0.*",
     "angular-elastic": "2.4.*",
+    "angular-truncate": "*",
+    "admin-lte": "2.1.*",
     "jScrollPane": "2.0.*",
     "jquery-form": "3.45.*",
     "jquery.scrollTo": "2.1.*",

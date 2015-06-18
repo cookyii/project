@@ -1,10 +1,7 @@
 /.idea
 /.c9
-/.environment.php
 /.env
-/.credentials.php
 /composer.phar
-/components
 /htpasswd
 /node_modules
 /vendor

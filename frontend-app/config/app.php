@@ -4,16 +4,16 @@
  * @author Revin Roman
  */
 
-defined('APP_NAME') or define('APP_NAME', 'Cookyii Base App frontend');
+defined('APP_NAME') or define('APP_NAME', 'Cookyii Frontend');
+
+$config = require(__DIR__ . '/../../common/config/app.php');
 
 $params = array_merge(
     require(__DIR__ . '/../../common/config/params.php'),
     require(__DIR__ . '/params.php')
 );
 
-$params['component.i18n']['translations'] = include(__DIR__ . '/translations.php');
-
-return [
+return array_merge($config, [
     'id' => 'frontend-app',
     'name' => APP_NAME,
     'basePath' => dirname(__DIR__),
@@ -30,6 +30,7 @@ return [
         'assetManager' => $params['component.assetManager'],
         'urlManager' => $params['component.urlManager.frontend'],
         'urlManager.backend' => $params['component.urlManager.backend'],
+        'request' => $params['component.request.frontend'],
         'view' => $params['component.view'],
         'i18n' => $params['component.i18n'],
         'formatter' => $params['component.formatter'],
@@ -39,7 +40,6 @@ return [
         'cache.query' => $params['component.cache.query'],
         'errorHandler' => $params['component.errorHandler'],
         'log' => $params['component.log'],
-        'request' => $params['component.request.frontend'],
     ],
     'params' => $params,
-];
+]);
