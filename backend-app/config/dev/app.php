@@ -1,7 +1,8 @@
 <?php
 /**
- * app.dev.php
+ * app.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
 $config = include __DIR__ . '/../app.php';
@@ -29,6 +30,6 @@ if (!isset($config['modules']['debug'])) {
     ];
 }
 
-include __DIR__.'/_extensions.php';
+$config['components']['rollbar']['enabled'] = false;
 
 return $config;

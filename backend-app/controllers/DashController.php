@@ -2,6 +2,7 @@
 /**
  * DashController.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
 namespace backend\controllers;
@@ -12,6 +13,20 @@ namespace backend\controllers;
  */
 class DashController extends \backend\components\Controller
 {
+
+    /**
+     * @inheritdoc
+     */
+    protected function accessRules()
+    {
+        return [
+            [
+                'allow' => true,
+                'actions' => ['index'],
+                'roles' => ['@'],
+            ],
+        ];
+    }
 
     /**
      * @throws \yii\web\NotFoundHttpException

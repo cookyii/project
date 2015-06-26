@@ -2,6 +2,7 @@
 /**
  * migration.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  *
  * This view is used by yii\console\controllers\MigrateController
  * The following variables are available in this view:
@@ -13,15 +14,15 @@ echo "<?php\n";
 
 use yii\db\mysql\Schema;
 
-class <?= $className ?> extends \common\components\Migration
+class <?= $className ?> extends \components\db\Migration
 {
 
-    public function safeUp()
+    public function up()
     {
 
     }
 
-    public function safeDown()
+    public function down()
     {
         echo "<?= $className ?> cannot be reverted.\n";
 

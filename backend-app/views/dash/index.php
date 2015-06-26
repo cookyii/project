@@ -2,6 +2,7 @@
 /**
  * index.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  *
  * @var yii\web\View $this
  */
@@ -10,7 +11,7 @@ use rmrevin\yii\fontawesome\FA;
 
 $this->title = 'Welcome to Cookyii Backend!';
 
-\backend\views\_assets\DashAssetBundle::register($this);
+\backend\views\assets\DashAssetBundle::register($this);
 
 ?>
 
@@ -32,7 +33,7 @@ $this->title = 'Welcome to Cookyii Backend!';
     </md-content>
 </md-sidenav>
 
-<section class="content" ng-controller="IndexController">
+<section class="content" ng-controller="DashController">
     <md-button class="md-accent md-fab md-fab-bottom-right" ng-click="toggleSidePanel()">
         FAB
     </md-button>

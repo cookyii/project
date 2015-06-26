@@ -2,11 +2,12 @@
 /**
  * main.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  *
  * @var yii\web\View $this
  * @var string $content
  */
-use rmrevin\yii\fontawesome\FA;
+
 use yii\helpers\Html;
 
 /** @var \resources\Account $Account */
@@ -301,75 +302,3 @@ $menu_items = include(__DIR__ . '/_menu.php');
 <?php
 
 $this->endContent();
-
-/**
- * @param array|string $item
- * @return null|string
- */
-function renderItem($item)
-{
-    $options = [];
-
-    if ($item['visible'] !== true) {
-        return null;
-    }
-
-    if (true === $item['selected']) {
-        Html::addCssClass($options, 'active');
-    }
-
-    $anchor_options = [];
-
-    if (!isset($item['items']) || empty($item['items'])) {
-        $label = '';
-        $subitems = '';
-
-        if (isset($item['icon']) && !empty($item['icon'])) {
-            $label .= $item['icon'] . ' ';
-        }
-
-        $label .= Html::tag('span', $item['label']);
-
-        if (isset($item['badge'])) {
-            if (!is_array($item['badge'])) {
-                $item['badge'] = ['text' => $item['badge']];
-            }
-
-            $opt = ['class' => 'label pull-right'];
-
-            if (isset($item['badge']['class'])) {
-                Html::addCssClass($opt, $item['badge']['class']);
-            }
-
-            $label .= ' ' . Html::tag('small', $item['badge']['text'], $opt);
-        }
-    } else {
-        $label = '';
-        $subitems = '';
-
-        if (isset($item['icon']) && !empty($item['icon'])) {
-            $label .= $item['icon'] . ' ';
-        }
-
-        $label .= Html::tag('span', $item['label'])
-            . FA::icon('angle-left')->pullRight();
-
-        foreach ($item['items'] as $subitem) {
-            $subitems .= renderItem($subitem);
-        }
-
-        $subitems = Html::tag('ul', $subitems, ['class' => 'treeview-menu']);
-
-        Html::addCssClass($options, 'treeview');
-    }
-
-    return Html::tag(
-        'li',
-        Html::a(
-            $label,
-            $item['url'],
-            $anchor_options
-        ) . $subitems,
-        $options
-    );
-}

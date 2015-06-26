@@ -2,6 +2,7 @@
 /**
  * _layout.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  *
  * @var yii\web\View $this
  * @var string $content
@@ -11,7 +12,7 @@ use yii\helpers\Html;
 
 $this->beginPage();
 
-frontend\_assets\AppAsset::register($this);
+frontend\assets\AppAsset::register($this);
 
 $title = empty($this->title)
     ? APP_NAME
@@ -20,19 +21,10 @@ $title = empty($this->title)
 /** @var \frontend\components\Controller $controller */
 $controller = $this->context;
 
-/** @var User|null $User */
+/** @var \resources\User|null $User */
 $User = User()->identity;
 
 $this->registerLinkTag(['rel' => 'canonical', 'href' => \yii\helpers\Url::canonical()]);
-$this->registerLinkTag(['rel' => 'shortcut icon', 'href' => '/favicon.png']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon.png']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon-57x57.png', 'sizes' => '57x57']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon-72x72.png', 'sizes' => '72x72']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon-76x76.png', 'sizes' => '76x76']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon-114x114.png', 'sizes' => '114x114']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon-120x120.png', 'sizes' => '120x120']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon-144x144.png', 'sizes' => '144x144']);
-$this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => '/img/apple-touch-icon-152x152.png', 'sizes' => '152x152']);
 
 $this->registerLinkTag([
     'rel' => 'stylesheet',
@@ -42,16 +34,16 @@ $this->registerLinkTag([
 $this->beginPage();
 
 ?><!DOCTYPE html>
-<?= Html::beginTag('html', [
+<html <?= Html::renderTagAttributes([
     'lang' => Yii::$app->language,
     'ng-app' => 'FrontendApp',
-]) ?>
+]) ?>>
 <head>
     <!--[if IE]>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <?
+    <?php
     echo Html::csrfMetaTags();
     echo Html::tag('title', $title);
 
@@ -60,13 +52,21 @@ $this->beginPage();
         echo Html::tag('meta', null, ['name' => 'token', 'content' => $User->token]) . "\n";
     }
 
-    $this->head()
+    $this->head();
+
+    echo rmrevin\yii\favicon\Favicon::widget([
+        'forceGenerate' => true,
+        'appname' => 'Cookyii CMF',
+        'color' => '#2B5797',
+        'fillColor' => '#A4EDFF',
+    ]);
+
     ?>
 </head>
 <body>
-<? $this->beginBody() ?>
+<?php
 
-<?
+$this->beginBody();
 
 if ($controller->hideLoader === false) {
     echo Html::tag('div', '<md-progress-circular class="md-warn md-hue-3" md-mode="indeterminate"></md-progress-circular>', [
@@ -86,6 +86,6 @@ echo $this->render('_toast');
 ?>
 
 </body>
-</html><?
+</html><?php
 
 $this->endPage();

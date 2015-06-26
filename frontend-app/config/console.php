@@ -2,6 +2,7 @@
 /**
  * console.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
 defined('APP_NAME') or define('APP_NAME', 'Cookyii Base App frontend');
@@ -20,6 +21,7 @@ return array_merge($config, [
     'aliases' => ['@tests' => '@frontend/tests'],
     'controllerNamespace' => 'frontend\commands',
     'controllerMap' => [
+        'account' => cookyii\modules\Account\commands\UserCommand::className(),
         'rbac' => common\commands\RbacCommand::className(),
         'migrate' => [
             'class' => components\console\controllers\MigrateController::className(),
@@ -27,6 +29,7 @@ return array_merge($config, [
             'migrationPath' => '@common/migrations',
         ],
     ],
+    'bootstrap' => ['log', 'rollbar'],
     'modules' => [],
     'components' => [
         'db' => $params['component.db'],
@@ -40,7 +43,12 @@ return array_merge($config, [
         'urlManager.backend' => $params['component.urlManager.backend'],
         'authManager' => $params['component.authManager'],
         'i18n' => $params['component.i18n'],
+        'formatter' => $params['component.formatter'],
         'log' => $params['component.log'],
+        'rollbar' => $params['component.rollbar'],
+        'errorHandler' => [
+            'class' => rmrevin\yii\rollbar\console\ErrorHandler::className(),
+        ],
     ],
     'params' => $params,
 ]);

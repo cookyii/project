@@ -2,6 +2,7 @@
 /**
  * Permissions.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
 namespace backend;
@@ -14,7 +15,4 @@ class Permissions
 {
 
     const ACCESS = 'backend.access';
-
-    const PAGE_ACCESS = 'backend.page.access';
-    const ACCOUNT_ACCESS = 'backend.account.access';
 }

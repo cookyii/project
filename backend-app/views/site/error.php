@@ -2,6 +2,7 @@
 /**
  * error.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  *
  * @var yii\web\View $this
  * @var string $name
@@ -12,7 +13,7 @@
 use yii\helpers\Html;
 use yii\web\HttpException;
 
-backend\_assets\AppAsset::register($this);
+backend\assets\AppAsset::register($this);
 
 /** @var \backend\controllers\SiteController $controller */
 $controller = $this->context;

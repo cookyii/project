@@ -2,6 +2,7 @@
 /**
  * error.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  *
  * @var yii\web\View $this
  * @var string $name
@@ -12,7 +13,7 @@
 use yii\helpers\Html;
 use yii\web\HttpException;
 
-frontend\_assets\AppAsset::register($this);
+frontend\assets\AppAsset::register($this);
 
 /** @var \frontend\controllers\SiteController $controller */
 $controller = $this->context;
@@ -45,7 +46,8 @@ $this->title = $title;
 
 <div layout="row" layout-align="center center" style="height: 100%">
     <div class="error-panel">
-        <?
+        <?php
+
         echo Html::tag('h1', $label, $label_options);
 
         if (!empty($message)) {

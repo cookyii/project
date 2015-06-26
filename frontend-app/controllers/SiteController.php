@@ -2,6 +2,7 @@
 /**
  * SiteController.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
 namespace frontend\controllers;
@@ -13,7 +14,19 @@ namespace frontend\controllers;
 class SiteController extends \frontend\components\Controller
 {
 
-    public $public = true;
+    /**
+     * @inheritdoc
+     */
+    protected function accessRules()
+    {
+        return [
+            [
+                'allow' => true,
+                'actions' => ['index'],
+                'roles' => ['?', '@'],
+            ],
+        ];
+    }
 
     /**
      * @inheritdoc

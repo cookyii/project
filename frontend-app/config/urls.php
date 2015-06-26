@@ -2,6 +2,10 @@
 /**
  * urls.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
-return [];
+return array_merge(
+//    include(\Yii::getAlias('@frontend/modules/Account/urls.php')),
+    []
+);

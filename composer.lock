@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e15cdf55e26ecc1ee96ad15d469280a6",
+    "hash": "ae22c4733d525ab8133e2abf29bb9c6e",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -315,16 +315,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "647d4fa025773743cd712db252ed77db977872ad"
+                "reference": "e9ffa6b83b89878d41919b5d91f65dac7cc03bf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/647d4fa025773743cd712db252ed77db977872ad",
-                "reference": "647d4fa025773743cd712db252ed77db977872ad",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/e9ffa6b83b89878d41919b5d91f65dac7cc03bf8",
+                "reference": "e9ffa6b83b89878d41919b5d91f65dac7cc03bf8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -352,7 +353,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-06-18 21:59:38"
+            "time": "2015-06-26 12:09:14"
         },
         {
             "name": "cookyii/module-account",
@@ -360,22 +361,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "fc8be333a1ae70ed89a6f72e31b284b87a668195"
+                "reference": "5023d3f1cded9ffe4c1e71f0e3be5d6c34b787aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/fc8be333a1ae70ed89a6f72e31b284b87a668195",
-                "reference": "fc8be333a1ae70ed89a6f72e31b284b87a668195",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/5023d3f1cded9ffe4c1e71f0e3be5d6c34b787aa",
+                "reference": "5023d3f1cded9ffe4c1e71f0e3be5d6c34b787aa",
                 "shasum": ""
             },
             "require": {
                 "cookyii/base": "dev-master",
-                "php": ">=5.4.0"
+                "cookyii/module-postman": "dev-master",
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
             },
             "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "cookyii\\modules\\Account\\Bootstrap"
-            },
             "autoload": {
                 "psr-4": {
                     "cookyii\\modules\\Account\\": "",
@@ -403,7 +403,59 @@
                 "user",
                 "yii2"
             ],
-            "time": "2015-06-18 21:32:38"
+            "time": "2015-06-26 12:29:04"
+        },
+        {
+            "name": "cookyii/module-feed",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-feed.git",
+                "reference": "40f4ea0b45f271f7d4cc2040653e73ca1da47222"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/40f4ea0b45f271f7d4cc2040653e73ca1da47222",
+                "reference": "40f4ea0b45f271f7d4cc2040653e73ca1da47222",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "cookyii/module-media": "dev-master",
+                "php": ">=5.5.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Feed\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Module for organization feeds for Cookyii CMF",
+            "keywords": [
+                "cmf",
+                "cookyii",
+                "feed",
+                "list",
+                "media",
+                "module",
+                "news",
+                "yii2"
+            ],
+            "time": "2015-06-26 14:09:04"
         },
         {
             "name": "cookyii/module-media",
@@ -411,23 +463,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-media.git",
-                "reference": "8dfa7ff6786989feeaeace04b377e33ca107c027"
+                "reference": "ba9e0a3b60542f066470377a1d1f2897d5a1d9d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-media/zipball/8dfa7ff6786989feeaeace04b377e33ca107c027",
-                "reference": "8dfa7ff6786989feeaeace04b377e33ca107c027",
+                "url": "https://api.github.com/repos/cookyii/module-media/zipball/ba9e0a3b60542f066470377a1d1f2897d5a1d9d4",
+                "reference": "ba9e0a3b60542f066470377a1d1f2897d5a1d9d4",
                 "shasum": ""
             },
             "require": {
                 "cookyii/base": "dev-master",
-                "cookyii/module-account": "dev-master",
                 "php": ">=5.4.0"
             },
             "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "cookyii\\modules\\Media\\Bootstrap"
-            },
             "autoload": {
                 "psr-4": {
                     "cookyii\\modules\\Media\\": "",
@@ -459,7 +507,7 @@
                 "video",
                 "yii2"
             ],
-            "time": "2015-06-18 21:33:33"
+            "time": "2015-06-23 11:53:35"
         },
         {
             "name": "cookyii/module-page",
@@ -467,19 +515,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-page.git",
-                "reference": "6c889c930643a7e1819bec0d5cf68694395c7366"
+                "reference": "18eac974c8bdb1a7c45cccf867babde0a8481bba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-page/zipball/6c889c930643a7e1819bec0d5cf68694395c7366",
-                "reference": "6c889c930643a7e1819bec0d5cf68694395c7366",
+                "url": "https://api.github.com/repos/cookyii/module-page/zipball/18eac974c8bdb1a7c45cccf867babde0a8481bba",
+                "reference": "18eac974c8bdb1a7c45cccf867babde0a8481bba",
                 "shasum": ""
             },
             "require": {
                 "cookyii/base": "dev-master",
                 "cookyii/module-account": "dev-master",
                 "cookyii/module-media": "dev-master",
-                "php": ">=5.5.0"
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -509,7 +558,58 @@
                 "static",
                 "yii2"
             ],
-            "time": "2015-06-18 21:34:47"
+            "time": "2015-06-26 12:29:40"
+        },
+        {
+            "name": "cookyii/module-postman",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-postman.git",
+                "reference": "be3353d43bc81423169545b4c4625b94c3dfccd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/be3353d43bc81423169545b4c4625b94c3dfccd2",
+                "reference": "be3353d43bc81423169545b4c4625b94c3dfccd2",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "cookyii/module-media": "dev-master",
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Postman\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Emails management module for Cookyii CMF",
+            "keywords": [
+                "cmf",
+                "cookyii",
+                "email",
+                "letters",
+                "module",
+                "queue",
+                "yii2"
+            ],
+            "time": "2015-06-26 12:30:18"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -653,17 +753,67 @@
             "time": "2014-10-30 22:58:02"
         },
         {
-            "name": "rmrevin/yii2-fontawesome",
-            "version": "2.10.1",
+            "name": "rmrevin/yii2-favicon-widget",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "4315b9a83343fb2217a0018d974e9dbeb2d34a1d"
+                "url": "https://github.com/rmrevin/yii2-favicon-widget.git",
+                "reference": "257b5d0971611d297f38a42a1862b0afbdda2eb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/4315b9a83343fb2217a0018d974e9dbeb2d34a1d",
-                "reference": "4315b9a83343fb2217a0018d974e9dbeb2d34a1d",
+                "url": "https://api.github.com/repos/rmrevin/yii2-favicon-widget/zipball/257b5d0971611d297f38a42a1862b0afbdda2eb1",
+                "reference": "257b5d0971611d297f38a42a1862b0afbdda2eb1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*",
+                "yiisoft/yii2-imagine": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "rmrevin\\yii\\favicon\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Revin",
+                    "email": "xgismox@gmail.com",
+                    "homepage": "http://rmrevin.ru/"
+                }
+            ],
+            "description": "Asset Bundle for Yii2 with Font Awesome",
+            "keywords": [
+                "favicon",
+                "widget",
+                "yii"
+            ],
+            "time": "2015-06-22 14:06:15"
+        },
+        {
+            "name": "rmrevin/yii2-fontawesome",
+            "version": "2.10.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+                "reference": "ce4dd62a048090f3d98822d4bc9401bfcdde1f98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/ce4dd62a048090f3d98822d4bc9401bfcdde1f98",
+                "reference": "ce4dd62a048090f3d98822d4bc9401bfcdde1f98",
                 "shasum": ""
             },
             "require": {
@@ -702,7 +852,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2015-05-09 08:36:03"
+            "time": "2015-06-23 13:06:14"
         },
         {
             "name": "rmrevin/yii2-imperavi-bundle",
@@ -752,16 +902,16 @@
         },
         {
             "name": "rmrevin/yii2-minify-view",
-            "version": "1.8.5",
+            "version": "1.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-minify-view.git",
-                "reference": "34e59067317e7cd05e06b3ed3a67cb528cf4388b"
+                "reference": "d4a446e41c191814596cff3c473062b902213f1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/34e59067317e7cd05e06b3ed3a67cb528cf4388b",
-                "reference": "34e59067317e7cd05e06b3ed3a67cb528cf4388b",
+                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/d4a446e41c191814596cff3c473062b902213f1a",
+                "reference": "d4a446e41c191814596cff3c473062b902213f1a",
                 "shasum": ""
             },
             "require": {
@@ -793,7 +943,7 @@
                 "view",
                 "yii2"
             ],
-            "time": "2015-06-10 14:29:57"
+            "time": "2015-06-19 11:23:18"
         },
         {
             "name": "rmrevin/yii2-power-migration",
@@ -840,16 +990,16 @@
         },
         {
             "name": "rmrevin/yii2-rbac-command",
-            "version": "1.1.3",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-rbac-command.git",
-                "reference": "6fce586261b1ebcdb3f36f3e9edccc73acc3db4a"
+                "reference": "b69fd9a559369b42af98d4d7344f8e07885f9891"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-rbac-command/zipball/6fce586261b1ebcdb3f36f3e9edccc73acc3db4a",
-                "reference": "6fce586261b1ebcdb3f36f3e9edccc73acc3db4a",
+                "url": "https://api.github.com/repos/rmrevin/yii2-rbac-command/zipball/b69fd9a559369b42af98d4d7344f8e07885f9891",
+                "reference": "b69fd9a559369b42af98d4d7344f8e07885f9891",
                 "shasum": ""
             },
             "require": {
@@ -879,7 +1029,58 @@
                 "rbac",
                 "yii"
             ],
-            "time": "2015-04-24 13:24:06"
+            "time": "2015-06-19 17:36:50"
+        },
+        {
+            "name": "rmrevin/yii2-rollbar",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmrevin/yii2-rollbar.git",
+                "reference": "99560e71305c2d80e485c701776ad4a45bc88912"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmrevin/yii2-rollbar/zipball/99560e71305c2d80e485c701776ad4a45bc88912",
+                "reference": "99560e71305c2d80e485c701776ad4a45bc88912",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "rollbar/rollbar": "0.13.*",
+                "yiisoft/yii2": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "rmrevin\\yii\\rollbar\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Revin",
+                    "email": "xgismox@gmail.com",
+                    "homepage": "http://rmrevin.ru/"
+                }
+            ],
+            "description": "Yii2 error handler rollbar",
+            "keywords": [
+                "error",
+                "font",
+                "rollbar",
+                "yii"
+            ],
+            "time": "2015-06-20 20:20:45"
         },
         {
             "name": "rmrevin/yii2-socicon",
@@ -927,6 +1128,55 @@
                 "yii"
             ],
             "time": "2015-05-03 11:07:29"
+        },
+        {
+            "name": "rollbar/rollbar",
+            "version": "v0.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rollbar/rollbar-php.git",
+                "reference": "f392af0c62b03d8538ef76e5da93c562c01700e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rollbar/rollbar-php/zipball/f392af0c62b03d8538ef76e5da93c562c01700e4",
+                "reference": "f392af0c62b03d8538ef76e5da93c562c01700e4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/rollbar.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rollbar, Inc.",
+                    "email": "support@rollbar.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Monitors errors and exceptions and reports them to Rollbar",
+            "homepage": "http://github.com/rollbar/rollbar-php",
+            "keywords": [
+                "debugging",
+                "errors",
+                "exceptions",
+                "logging",
+                "monitoring"
+            ],
+            "time": "2015-06-16 22:10:25"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1362,16 +1612,16 @@
     "packages-dev": [
         {
             "name": "codeception/codeception",
-            "version": "2.0.14",
+            "version": "2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "d1e994dc9fe07d1decb21ded6ced4636f493822c"
+                "reference": "3f38f54892194f924f15ad87c977dc41932241b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/d1e994dc9fe07d1decb21ded6ced4636f493822c",
-                "reference": "d1e994dc9fe07d1decb21ded6ced4636f493822c",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/3f38f54892194f924f15ad87c977dc41932241b6",
+                "reference": "3f38f54892194f924f15ad87c977dc41932241b6",
                 "shasum": ""
             },
             "require": {
@@ -1380,7 +1630,7 @@
                 "facebook/webdriver": "~0.4|~0.5",
                 "guzzlehttp/guzzle": "~4.0|~5.0",
                 "php": ">=5.4.0",
-                "phpunit/phpunit": "~4.6.0",
+                "phpunit/phpunit": "~4.7.0",
                 "symfony/browser-kit": "~2.4",
                 "symfony/console": "~2.4",
                 "symfony/css-selector": "~2.4",
@@ -1438,7 +1688,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2015-05-28 09:05:45"
+            "time": "2015-06-26 02:31:19"
         },
         {
             "name": "codeception/phpbuiltinserver",
@@ -2010,16 +2260,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e"
+                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/be2286cb8c7e1773eded49d9719219e6f74f9e3e",
-                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
+                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
                 "shasum": ""
             },
             "require": {
@@ -2068,7 +2318,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-09 13:05:42"
+            "time": "2015-06-19 07:11:55"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2119,16 +2369,16 @@
         },
         {
             "name": "phpunit/php-text-template",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a"
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
-                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "shasum": ""
             },
             "require": {
@@ -2137,20 +2387,17 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "Text/"
+                    "src/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                ""
-            ],
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sb@sebastian-bergmann.de",
+                    "email": "sebastian@phpunit.de",
                     "role": "lead"
                 }
             ],
@@ -2159,7 +2406,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2014-01-30 17:20:04"
+            "time": "2015-06-21 13:50:34"
         },
         {
             "name": "phpunit/php-timer",
@@ -2204,16 +2451,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "db63be1159c81df649cd0260e30249a586d4129e"
+                "reference": "7a9b0969488c3c54fd62b4d504b3ec758fd005d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db63be1159c81df649cd0260e30249a586d4129e",
-                "reference": "db63be1159c81df649cd0260e30249a586d4129e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/7a9b0969488c3c54fd62b4d504b3ec758fd005d9",
+                "reference": "7a9b0969488c3c54fd62b4d504b3ec758fd005d9",
                 "shasum": ""
             },
             "require": {
@@ -2249,20 +2496,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-06-12 07:34:24"
+            "time": "2015-06-19 03:43:16"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.6.10",
+            "version": "4.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7b5fe98b28302a8b25693b2298bca74463336975"
+                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b5fe98b28302a8b25693b2298bca74463336975",
-                "reference": "7b5fe98b28302a8b25693b2298bca74463336975",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f6701ef3faea759acd1910a7751d8d102a7fd5bc",
+                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc",
                 "shasum": ""
             },
             "require": {
@@ -2273,10 +2520,10 @@
                 "ext-spl": "*",
                 "php": ">=5.3.3",
                 "phpspec/prophecy": "~1.3,>=1.3.1",
-                "phpunit/php-code-coverage": "~2.0,>=2.0.11",
+                "phpunit/php-code-coverage": "~2.1",
                 "phpunit/php-file-iterator": "~1.4",
                 "phpunit/php-text-template": "~1.2",
-                "phpunit/php-timer": "~1.0",
+                "phpunit/php-timer": ">=1.0.6",
                 "phpunit/phpunit-mock-objects": "~2.3",
                 "sebastian/comparator": "~1.1",
                 "sebastian/diff": "~1.2",
@@ -2295,7 +2542,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.6.x-dev"
+                    "dev-master": "4.7.x-dev"
                 }
             },
             "autoload": {
@@ -2321,7 +2568,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-03 05:03:30"
+            "time": "2015-06-21 07:23:36"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2760,16 +3007,16 @@
         },
         {
             "name": "sebastian/version",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4"
+                "reference": "58b3a85e7999757d6ad81c787a1fbf5ff6c628c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
-                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
+                "reference": "58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
                 "shasum": ""
             },
             "type": "library",
@@ -2791,7 +3038,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2015-02-24 06:35:25"
+            "time": "2015-06-21 13:59:46"
         },
         {
             "name": "symfony/browser-kit",
@@ -3311,8 +3558,10 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "cookyii/base": 20,
+        "cookyii/module-feed": 20,
         "cookyii/module-account": 20,
         "cookyii/module-page": 20,
+        "cookyii/module-postman": 20,
         "cookyii/module-media": 20
     },
     "prefer-stable": true,

@@ -2,6 +2,7 @@
 /**
  * SiteController.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
 
 namespace backend\controllers;
@@ -18,6 +19,20 @@ class SiteController extends \backend\components\Controller
     /**
      * @inheritdoc
      */
+    protected function accessRules()
+    {
+        return [
+            [
+                'allow' => true,
+                'actions' => ['index', 'error', 'captcha', 'tz'],
+                'roles' => ['?', '@'],
+            ],
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function actions()
     {
         return [
@@ -27,6 +42,9 @@ class SiteController extends \backend\components\Controller
             'captcha' => [
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_DEBUG ? 'random' : null,
+            ],
+            'tz' => [ // setting timezone
+                'class' => 'components\web\actions\TimeZoneAction',
             ],
         ];
     }

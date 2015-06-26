@@ -1,7 +1,7 @@
 <?php
 /**
  * Controller.php
- * @author Revin Roman
+ * @author Some Developer
  */
 
 namespace backend\modules\Blank\components;
@@ -10,6 +10,7 @@ namespace backend\modules\Blank\components;
  * Class Controller
  * @package backend\modules\Blank\components
  */
-class Controller extends \backend\components\Controller
+abstract class Controller extends \backend\components\Controller
 {
+
 }

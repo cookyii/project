@@ -2,7 +2,10 @@
 /**
  * params.php
  * @author Revin Roman
+ * @link https://rmrevin.ru
  */
+
+$ROLLBAR_ACCESS_TOKEN = getenv('ROLLBAR_ACCESS_TOKEN');
 
 return [
     'component.db' => [
@@ -16,6 +19,25 @@ return [
         'username' => getenv('DB_USER'),
         'password' => getenv('DB_PASS'),
         'tablePrefix' => 'yii_'
+    ],
+    'component.mailer' => [
+        'class' => yii\swiftmailer\Mailer::className(),
+        'transport' => [
+            'class' => 'Swift_SmtpTransport',
+            'host' => getenv('SMTP_HOST'),
+            'username' => getenv('SMTP_USER'),
+            'password' => getenv('SMTP_PASS'),
+            'port' => getenv('SMTP_PORT'),
+            'encryption' => getenv('SMTP_ENC'),
+        ],
+    ],
+    'component.rollbar' => [
+        'class' => rmrevin\yii\rollbar\Component::className(),
+        'accessToken' => $ROLLBAR_ACCESS_TOKEN,
+        'enabled' => !empty($ROLLBAR_ACCESS_TOKEN) && $ROLLBAR_ACCESS_TOKEN !== 'null',
+        'useLogger' => YII_DEBUG,
+        'environment' => YII_ENV,
+        'reportSuppressed' => true,
     ],
     'component.session' => [
         'class' => yii\web\DbSession::className(),
@@ -85,11 +107,6 @@ return [
         'cache' => false,
         'rules' => require(\Yii::getAlias('@backend/config/urls.php')),
     ],
-    'component.errorHandler' => [
-        'errorAction' => 'site/error',
-    ],
-    'component.i18n' => [
-    ],
     'component.request.frontend' => [
         'cookieValidationKey' => getenv('FRONTEND_COOKIE_VALIDATION_KEY'),
         'parsers' => ['application/json' => 'yii\web\JsonParser'],
@@ -98,10 +115,16 @@ return [
         'cookieValidationKey' => getenv('BACKEND_COOKIE_VALIDATION_KEY'),
         'parsers' => ['application/json' => 'yii\web\JsonParser'],
     ],
+    'component.i18n' => [
+        'class' => yii\i18n\I18N::className(),
+        'translations' => [
+            'cookyii' => yii\i18n\PhpMessageSource::className(),
+        ],
+    ],
     'component.formatter' => [
         'class' => components\i18n\Formatter::className(),
         'locale' => 'en',
-        'timeZone' => 'Etc/GMT-0',
+        'timeZone' => 'Etc/GMT',
         'dateFormat' => 'dd MMMM y',
         'timeFormat' => 'HH:mm',
         'datetimeFormat' => 'dd MMMM y HH:mm',

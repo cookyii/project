@@ -128,7 +128,7 @@ function getPath($app, $key = null)
     $list = [
         'base' => $base_path,
         'app' => $app_path,
-        'assets' => $app_path . DIRECTORY_SEPARATOR . '_assets' . DIRECTORY_SEPARATOR . '_sources',
+        'assets' => $app_path . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . '_sources',
         'node' => $base_path . DIRECTORY_SEPARATOR . 'node_modules' . DIRECTORY_SEPARATOR . '.bin',
     ];
 
@@ -198,7 +198,7 @@ function appendMigrateTask(array &$config, $task_name, $app)
         '.description' => 'Compile all less styles for `board` application',
         '.task' => [
             'class' => 'cookyii\build\tasks\CommandTask',
-            'commandline' => cmd($app, './{a} migrate'),
+            'commandline' => cmd($app, './{a} migrate --interactive=0'),
         ],
     ];
 }
