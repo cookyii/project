@@ -18,9 +18,15 @@ return array_merge($config, [
     'id' => 'frontend-app',
     'name' => APP_NAME,
     'basePath' => dirname(__DIR__),
+    'extensions' => array_merge($config['extensions'], include __DIR__ . '/../../.extensions.php'),
     'controllerNamespace' => 'frontend\controllers',
-    'bootstrap' => ['log', 'rollbar'],
+    'bootstrap' => [
+        'page', 'media',
+        'log', 'rollbar',
+    ],
     'modules' => [
+        'page' => cookyii\modules\Page\frontend\Module::className(),
+        'media' => cookyii\modules\Media\Module::className(),
     ],
     'components' => [
         'db' => $params['component.db'],

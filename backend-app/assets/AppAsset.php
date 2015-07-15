@@ -27,12 +27,16 @@ class AppAsset extends \yii\web\AssetBundle
         'js/scripts.js',
         'js/directives.js',
         'js/BackendApp.js',
+        'js/scopes/QueryScope.js',
+        'js/scopes/ToastScope.js',
+        'js/scopes/FilterSearchScope.js',
+        'js/scopes/SortScope.js',
     ];
 
     public $depends = [
-        'components\assets\Html5shivAssetBundle',
-        'components\assets\RespondAssetBundle',
-        'components\assets\ModernizrAssetBundle',
+        'cookyii\assets\Html5shivAssetBundle',
+        'cookyii\assets\RespondAssetBundle',
+        'cookyii\assets\ModernizrAssetBundle',
 
         'yii\web\YiiAsset',
         'yii\web\JqueryAsset',
@@ -40,14 +44,14 @@ class AppAsset extends \yii\web\AssetBundle
         'yii\bootstrap\BootstrapPluginAsset',
         'rmrevin\yii\fontawesome\cdn\AssetBundle',
         'backend\assets\ImperaviAssetBundle',
-        'components\assets\AnimateCssAssetBundle',
-        'components\assets\SweetAlertAssetBundle',
-        'components\assets\SpeakingurlAssetBundle',
-        'components\assets\MomentAssetBundle',
-        'components\assets\angular\AngularAssetBundle',
-        'components\assets\jquery\DateTimePickerAssetBundle',
-        'components\assets\jquery\cdn\FormAssetBundle',
-        'components\assets\jquery\cdn\ScrollToAssetBundle',
-        'components\assets\jquery\cdn\JScrollPaneAssetBundle',
+        'cookyii\assets\AnimateCssAssetBundle',
+        'cookyii\assets\SweetAlertAssetBundle',
+        'cookyii\assets\SpeakingurlAssetBundle',
+        'cookyii\assets\MomentAssetBundle',
+        'cookyii\assets\angular\AngularAssetBundle',
+        'cookyii\assets\jquery\DateTimePickerAssetBundle',
+        'cookyii\assets\jquery\cdn\FormAssetBundle',
+        'cookyii\assets\jquery\cdn\ScrollToAssetBundle',
+        'cookyii\assets\jquery\cdn\JScrollPaneAssetBundle',
     ];
 }

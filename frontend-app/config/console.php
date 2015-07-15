@@ -19,12 +19,13 @@ return array_merge($config, [
     'name' => APP_NAME,
     'basePath' => dirname(__DIR__),
     'aliases' => ['@tests' => '@frontend/tests'],
+    'extensions' => array_merge($config['extensions'], include __DIR__ . '/../../.extensions.php'),
     'controllerNamespace' => 'frontend\commands',
     'controllerMap' => [
         'account' => cookyii\modules\Account\commands\UserCommand::className(),
         'rbac' => common\commands\RbacCommand::className(),
         'migrate' => [
-            'class' => components\console\controllers\MigrateController::className(),
+            'class' => cookyii\console\controllers\MigrateController::className(),
             'templateFile' => '@common/views/migration.php',
             'migrationPath' => '@common/migrations',
         ],
