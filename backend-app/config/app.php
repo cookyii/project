@@ -18,6 +18,7 @@ return array_merge($config, [
     'id' => 'backend-app',
     'name' => APP_NAME,
     'basePath' => dirname(__DIR__),
+    'extensions' => array_merge($config['extensions'], include __DIR__ . '/../../.extensions.php'),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => [
         'feed', 'account', 'page', 'postman', 'media',
@@ -33,7 +34,7 @@ return array_merge($config, [
     'components' => [
         'db' => $params['component.db'],
         'mailer' => $params['component.mailer'],
-        'request' => $params['component.request.frontend'],
+        'request' => $params['component.request'],
         'security' => $params['component.security'],
         'session' => $params['component.session'],
         'user' => $params['component.user'],
@@ -44,6 +45,7 @@ return array_merge($config, [
         'assetManager' => $params['component.assetManager'],
         'urlManager.frontend' => $params['component.urlManager.frontend'],
         'urlManager' => $params['component.urlManager.backend'],
+        'urlManager.crm' => $params['component.urlManager.crm'],
         'authManager' => $params['component.authManager'],
         'authClientCollection' => $params['component.authClientCollection'],
         'i18n' => $params['component.i18n'],
