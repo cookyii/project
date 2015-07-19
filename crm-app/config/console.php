@@ -21,13 +21,9 @@ return array_merge($config, [
     'aliases' => ['@tests' => '@crm/tests'],
     'controllerNamespace' => 'crm\commands',
     'controllerMap' => [
-        'account' => cookyii\modules\Account\commands\UserCommand::className(),
+        'account' => cookyii\modules\Account\commands\AccountCommand::className(),
         'rbac' => common\commands\RbacCommand::className(),
-        'migrate' => [
-            'class' => cookyii\console\controllers\MigrateController::className(),
-            'templateFile' => '@common/views/migration.php',
-            'migrationPath' => '@common/migrations',
-        ],
+        'migrate' => $params['command.migrate'],
     ],
     'modules' => [],
     'components' => [

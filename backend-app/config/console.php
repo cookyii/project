@@ -24,11 +24,7 @@ return array_merge($config, [
         'account' => cookyii\modules\Account\commands\AccountCommand::className(),
         'rbac' => common\commands\RbacCommand::className(),
         'socket' => backend\commands\SocketCommand::className(),
-        'migrate' => [
-            'class' => cookyii\console\controllers\MigrateController::className(),
-            'templateFile' => '@common/views/migration.php',
-            'migrationPath' => '@common/migrations',
-        ],
+        'migrate' => $params['command.migrate'],
     ],
     'modules' => [],
     'components' => [
