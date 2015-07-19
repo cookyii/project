@@ -363,12 +363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "08db6d4434598ada264a5f4bdc0b56f12a13601d"
+                "reference": "3b7dbe4d9627020cd1ac37a8387c53489b9f4216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/08db6d4434598ada264a5f4bdc0b56f12a13601d",
-                "reference": "08db6d4434598ada264a5f4bdc0b56f12a13601d",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/3b7dbe4d9627020cd1ac37a8387c53489b9f4216",
+                "reference": "3b7dbe4d9627020cd1ac37a8387c53489b9f4216",
                 "shasum": ""
             },
             "require": {
@@ -402,7 +402,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-07-19 11:18:46"
+            "time": "2015-07-19 15:04:39"
         },
         {
             "name": "cookyii/build",
@@ -410,12 +410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/build.git",
-                "reference": "527578773c415afda0858174abd74d9b91f5477e"
+                "reference": "944daf55c549e6f87932702f62cc074d518bcc9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/build/zipball/527578773c415afda0858174abd74d9b91f5477e",
-                "reference": "527578773c415afda0858174abd74d9b91f5477e",
+                "url": "https://api.github.com/repos/cookyii/build/zipball/944daf55c549e6f87932702f62cc074d518bcc9f",
+                "reference": "944daf55c549e6f87932702f62cc074d518bcc9f",
                 "shasum": ""
             },
             "require": {
@@ -455,7 +455,7 @@
                 "build",
                 "tool"
             ],
-            "time": "2015-07-19 12:13:25"
+            "time": "2015-07-19 13:38:24"
         },
         {
             "name": "cookyii/module-account",
