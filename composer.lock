@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e2c553a7a3f2438275b41599acbb7f84",
+    "hash": "df6bfbb7ec28986cd2689689952b6245",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -363,12 +363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "3b7dbe4d9627020cd1ac37a8387c53489b9f4216"
+                "reference": "25f3cbac4475a9f69f17b3160e84c1dd8d5e5a75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/3b7dbe4d9627020cd1ac37a8387c53489b9f4216",
-                "reference": "3b7dbe4d9627020cd1ac37a8387c53489b9f4216",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/25f3cbac4475a9f69f17b3160e84c1dd8d5e5a75",
+                "reference": "25f3cbac4475a9f69f17b3160e84c1dd8d5e5a75",
                 "shasum": ""
             },
             "require": {
@@ -402,7 +402,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-07-19 15:04:39"
+            "time": "2015-07-19 15:31:26"
         },
         {
             "name": "cookyii/build",
