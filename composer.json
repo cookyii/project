@@ -27,6 +27,7 @@
   "require": {
     "php": ">=5.4.0",
 
+    "cookyii/build": "dev-master",
     "cookyii/base": "dev-master",
     "cookyii/module-feed": "dev-master",
     "cookyii/module-account": "dev-master",
@@ -51,6 +52,7 @@
     "rmrevin/yii2-rollbar": "~1.1",
     "rmrevin/yii2-favicon-widget": "~1.0",
 
+    "cboden/ratchet": "0.3.*",
     "samdark/sitemap": "2.0.*",
     "vlucas/phpdotenv": "2.0.*"
   },
@@ -71,12 +73,42 @@
       "backend\\modules\\": "./backend-modules",
       "crm\\": "./crm-app",
       "crm\\modules\\": "./crm-modules",
+      "cookyii\\modules\\Feed\\": "./modules/Feed",
+      "cookyii\\modules\\Account\\": "./modules/Account",
+      "cookyii\\modules\\Client\\": "./modules/Client",
+      "cookyii\\modules\\Order\\": "./modules/Order",
+      "cookyii\\modules\\Page\\": "./modules/Page",
+      "cookyii\\modules\\Postman\\": "./modules/Postman",
+      "cookyii\\modules\\Media\\": "./modules/Media",
+      "cookyii\\": "./components",
       "resources\\": [
         "./resources"
       ]
     }
   },
   "extra": {
+    "writable": [
+      "frontend-app/runtime",
+      "frontend-app/web/assets",
+      "frontend-app/web/storage",
+      "frontend-app/web/upload",
+      "backend-app/runtime",
+      "backend-app/web/assets",
+      "backend-app/web/storage",
+      "backend-app/web/upload",
+      "crm-app/runtime",
+      "crm-app/web/assets",
+      "crm-app/web/storage",
+      "crm-app/web/upload"
+    ],
+    "executable": [
+      "build",
+      "codecept",
+      "generate_self_signed_ssl_key",
+      "frontend",
+      "backend",
+      "crm"
+    ],
     "asset-installer-paths": {
       "npm-asset-library": "vendor/npm",
       "bower-asset-library": "vendor/bower"

@@ -104,6 +104,42 @@ $config = [
             'commandline' => './frontend rbac/update',
         ],
     ],
+
+    'extract' => [
+        '.description' => 'Extract codebase to split repos',
+        '.depends' => [
+            'clear',
+            'extract/files',
+        ],
+        'files' => [
+            '.description' => 'Extract files to split repos',
+            '.task' => [
+                'class' => '\cookyii\build\tasks\CommandTask',
+                'commandline' => [
+                    // base
+                    'rsync -rt ./components/ ../base/',
+                    // modules
+                    'rsync -rt ./modules/Account/ ../module-account/',
+                    'rsync -rt ./modules/Client/ ../module-client/',
+                    'rsync -rt ./modules/Feed/ ../module-feed/',
+                    'rsync -rt ./modules/Media/ ../module-media/',
+                    'rsync -rt ./modules/Order/ ../module-order/',
+                    'rsync -rt ./modules/Page/ ../module-page/',
+                    'rsync -rt ./modules/Postman/ ../module-postman/',
+                    // project
+//                    'rsync -rtv ./common/ ../project/common/',
+//                    'rsync -rtv ./frontend-app/ ../project/frontend-app/',
+//                    'rsync -rtv ./frontend-modules/ ../project/frontend-modules/',
+//                    'rsync -rtv ./backend-app/ ../project/backend-app/',
+//                    'rsync -rtv ./backend-modules/ ../project/backend-modules/',
+//                    'rsync -rtv ./crm-app/ ../project/crm-app/',
+//                    'rsync -rtv ./crm-modules/ ../project/crm-modules/',
+                    'rsync -t ./* ../project/',
+                    'rsync -t ./.* ../project/',
+                ],
+            ],
+        ],
+    ],
 ];
 
 // create applications tasks
