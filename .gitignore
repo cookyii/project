@@ -1,7 +1,10 @@
 /.idea
 /.c9
+/.vagrant
 /.env
 /composer.phar
 /htpasswd
 /node_modules
 /vendor
+/package.box
+/npm-debug.log

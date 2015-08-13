@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('BackendApp')
+angular.module('FrontendApp')
 
   .factory('QueryScope', [
     '$rootScope', '$location',
