@@ -22,10 +22,19 @@ $config = [
         '.task' => 'cookyii\build\tasks\MapTask',
     ],
 
+    'self' => [
+        '.description' => 'Internal tasks',
+        '.task' => [
+            'class' => 'cookyii\build\tasks\SelfTask',
+            'composer' => '../composer.phar',
+        ],
+    ],
+
     'set' => [
         'prod' => [
             '.description' => 'Build project with production environment',
             '.depends' => [
+                'self/update',
                 'environment/check',
                 'clear',
                 'composer/selfupdate', 'composer/install',
@@ -36,6 +45,7 @@ $config = [
         'demo' => [
             '.description' => 'Build project with demo environment',
             '.depends' => [
+                'self/update',
                 'environment/check',
                 'clear',
                 'composer/selfupdate', 'composer/install-dev',
@@ -46,6 +56,7 @@ $config = [
         'dev' => [
             '.description' => 'Build project with developer environment',
             '.depends' => [
+                'self/update',
                 'environment/check',
                 'clear',
                 'composer/selfupdate', 'composer/install-dev',
@@ -87,6 +98,16 @@ $config = [
             'class' => 'cookyii\build\tasks\CommandTask',
             'commandline' => 'npm install',
         ],
+        'update' => [
+            '.description' => 'Update all npm and bower dependencies',
+            '.task' => [
+                'class' => 'cookyii\build\tasks\CommandTask',
+                'commandline' => [
+                    'npm update',
+                    './node_modules/.bin/bower update',
+                ],
+            ],
+        ],
     ],
 
     'less' => [
@@ -102,42 +123,6 @@ $config = [
         '.task' => [
             'class' => 'cookyii\build\tasks\CommandTask',
             'commandline' => './frontend rbac/update',
-        ],
-    ],
-
-    'extract' => [
-        '.description' => 'Extract codebase to split repos',
-        '.depends' => [
-            'clear',
-            'extract/files',
-        ],
-        'files' => [
-            '.description' => 'Extract files to split repos',
-            '.task' => [
-                'class' => '\cookyii\build\tasks\CommandTask',
-                'commandline' => [
-                    // base
-                    'rsync -rt ./components/ ../base/',
-                    // modules
-                    'rsync -rt ./modules/Account/ ../module-account/',
-                    'rsync -rt ./modules/Client/ ../module-client/',
-                    'rsync -rt ./modules/Feed/ ../module-feed/',
-                    'rsync -rt ./modules/Media/ ../module-media/',
-                    'rsync -rt ./modules/Order/ ../module-order/',
-                    'rsync -rt ./modules/Page/ ../module-page/',
-                    'rsync -rt ./modules/Postman/ ../module-postman/',
-                    // project
-//                    'rsync -rtv ./common/ ../project/common/',
-//                    'rsync -rtv ./frontend-app/ ../project/frontend-app/',
-//                    'rsync -rtv ./frontend-modules/ ../project/frontend-modules/',
-//                    'rsync -rtv ./backend-app/ ../project/backend-app/',
-//                    'rsync -rtv ./backend-modules/ ../project/backend-modules/',
-//                    'rsync -rtv ./crm-app/ ../project/crm-app/',
-//                    'rsync -rtv ./crm-modules/ ../project/crm-modules/',
-                    'rsync -t ./* ../project/',
-                    'rsync -t ./.* ../project/',
-                ],
-            ],
         ],
     ],
 ];
@@ -182,6 +167,9 @@ function appendClearTask(array &$config, $task_name, $app)
 {
     appendEmptyTask($config, $task_name);
 
+    $base_path = __DIR__;
+    $app_path = $base_path . DIRECTORY_SEPARATOR . sprintf('%s-app', $app);
+
     $config[$task_name]['.depends'][] = sprintf('*/%s', $app);
     $config[$task_name][$app] = [
         '.description' => 'Remove all temp files',
@@ -189,9 +177,9 @@ function appendClearTask(array &$config, $task_name, $app)
             'class' => 'cookyii\build\tasks\DeleteTask',
             'deleteDir' => false,
             'fileSets' => [
-                ['dir' => 'crm-app/runtime', 'exclude' => ['.gitignore']],
-                ['dir' => 'crm-app/web/assets', 'exclude' => ['.gitignore']],
-                ['dir' => 'crm-app/web/minify', 'exclude' => ['.gitignore']],
+                ['dir' => sprintf('%s/runtime', $app_path), 'exclude' => ['.gitignore']],
+                ['dir' => sprintf('%s/web/assets', $app_path), 'exclude' => ['.gitignore']],
+                ['dir' => sprintf('%s/web/minify', $app_path), 'exclude' => ['.gitignore']],
             ],
         ],
     ];
@@ -208,7 +196,7 @@ function appendLessTask(array &$config, $task_name, $app)
 
     $config[$task_name]['.depends'][] = sprintf('*/%s', $app);
     $config[$task_name][$app] = [
-        '.description' => 'Compile all less styles for `board` application',
+        '.description' => sprintf('Compile all less styles for `%s` application', $app),
         '.task' => [
             'class' => 'cookyii\build\tasks\CommandTask',
             'commandline' => [
@@ -231,7 +219,7 @@ function appendMigrateTask(array &$config, $task_name, $app)
 
     $config[$task_name]['.depends'][] = sprintf('*/%s', $app);
     $config[$task_name][$app] = [
-        '.description' => 'Compile all less styles for `board` application',
+        '.description' => sprintf('Compile all less styles for `%s` application', $app),
         '.task' => [
             'class' => 'cookyii\build\tasks\CommandTask',
             'commandline' => cmd($app, './{a} migrate --interactive=0'),
