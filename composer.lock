@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "436f3358a86a2350ddb68b26da5b8ca7",
+    "hash": "b16d94ed8457b18672be8e0e886a6558",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -310,6 +310,52 @@
             "time": "2015-03-06 05:28:07"
         },
         {
+            "name": "cookyii/base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/base.git",
+                "reference": "030b04d90968f5d2e8e92bcf9560832cce48cbcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/030b04d90968f5d2e8e92bcf9560832cce48cbcc",
+                "reference": "030b04d90968f5d2e8e92bcf9560832cce48cbcc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Base components Cookyii CMF",
+            "keywords": [
+                "base",
+                "cmf",
+                "component",
+                "cookyii",
+                "yii2"
+            ],
+            "time": "2015-09-07 17:56:42"
+        },
+        {
             "name": "cookyii/build",
             "version": "dev-master",
             "source": {
@@ -361,6 +407,318 @@
                 "tool"
             ],
             "time": "2015-08-10 19:46:08"
+        },
+        {
+            "name": "cookyii/module-account",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-account.git",
+                "reference": "8d62f239c06fdb47dfcf154f8cac51d7b6ee27b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/8d62f239c06fdb47dfcf154f8cac51d7b6ee27b1",
+                "reference": "8d62f239c06fdb47dfcf154f8cac51d7b6ee27b1",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "cookyii/module-postman": "dev-master",
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Account\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Account management module for Cookyii CMF",
+            "keywords": [
+                "account",
+                "cmf",
+                "cookyii",
+                "module",
+                "user",
+                "yii2"
+            ],
+            "time": "2015-09-07 17:42:14"
+        },
+        {
+            "name": "cookyii/module-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-client.git",
+                "reference": "b79226cefe522cb2dc9b7f966c2510abd6bf44ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-client/zipball/b79226cefe522cb2dc9b7f966c2510abd6bf44ab",
+                "reference": "b79226cefe522cb2dc9b7f966c2510abd6bf44ab",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Client\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                },
+                {
+                    "name": "Alexander Volkov",
+                    "email": "volkkb@gmail.com",
+                    "homepage": "https://github.com/VolkovAlexander",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Client management module for Cookyii CMF",
+            "keywords": [
+                "client",
+                "cmf",
+                "cookyii",
+                "module",
+                "yii2"
+            ],
+            "time": "2015-07-19 11:26:28"
+        },
+        {
+            "name": "cookyii/module-feed",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-feed.git",
+                "reference": "b99afed4ee14abad071868aaff2e8ae3d4f12f53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/b99afed4ee14abad071868aaff2e8ae3d4f12f53",
+                "reference": "b99afed4ee14abad071868aaff2e8ae3d4f12f53",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "cookyii/module-media": "dev-master",
+                "php": ">=5.5.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Feed\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Module for organization feeds for Cookyii CMF",
+            "keywords": [
+                "cmf",
+                "cookyii",
+                "feed",
+                "list",
+                "media",
+                "module",
+                "news",
+                "yii2"
+            ],
+            "time": "2015-08-13 18:23:54"
+        },
+        {
+            "name": "cookyii/module-media",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-media.git",
+                "reference": "343aaee2c4d7faab9d9d246fce74069c8bad8df0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-media/zipball/343aaee2c4d7faab9d9d246fce74069c8bad8df0",
+                "reference": "343aaee2c4d7faab9d9d246fce74069c8bad8df0",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.0.*",
+                "yiisoft/yii2-imagine": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Media\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Media management module for Cookyii CMF",
+            "keywords": [
+                "audio",
+                "cmf",
+                "cookyii",
+                "document",
+                "file",
+                "media",
+                "module",
+                "photo",
+                "video",
+                "yii2"
+            ],
+            "time": "2015-08-13 18:25:08"
+        },
+        {
+            "name": "cookyii/module-page",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-page.git",
+                "reference": "f794bd540b67db40c61675841be1fe8d16cd316d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-page/zipball/f794bd540b67db40c61675841be1fe8d16cd316d",
+                "reference": "f794bd540b67db40c61675841be1fe8d16cd316d",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "cookyii/module-account": "dev-master",
+                "cookyii/module-media": "dev-master",
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Page\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Static pages management module for Cookyii CMF",
+            "keywords": [
+                "cmf",
+                "cookyii",
+                "module",
+                "page",
+                "static",
+                "yii2"
+            ],
+            "time": "2015-08-13 18:26:27"
+        },
+        {
+            "name": "cookyii/module-postman",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-postman.git",
+                "reference": "3124f26a7b752cfa3da4426a246f3c4671d3cab2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/3124f26a7b752cfa3da4426a246f3c4671d3cab2",
+                "reference": "3124f26a7b752cfa3da4426a246f3c4671d3cab2",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "cookyii/module-media": "dev-master",
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.10"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Postman\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Emails management module for Cookyii CMF",
+            "keywords": [
+                "cmf",
+                "cookyii",
+                "email",
+                "letters",
+                "module",
+                "queue",
+                "yii2"
+            ],
+            "time": "2015-08-18 09:26:13"
         },
         {
             "name": "ezyang/htmlpurifier",

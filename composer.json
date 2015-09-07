@@ -24,15 +24,6 @@
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
-  "replace": {
-    "cookyii/base": "self.version",
-    "cookyii/module-feed": "self.version",
-    "cookyii/module-account": "self.version",
-    "cookyii/module-client": "self.version",
-    "cookyii/module-page": "self.version",
-    "cookyii/module-postman": "self.version",
-    "cookyii/module-media": "self.version"
-  },
   "require": {
     "php": ">=5.4.0",
 
@@ -81,24 +72,7 @@
       "backend\\modules\\": "./backend-modules",
       "crm\\": "./crm-app",
       "crm\\modules\\": "./crm-modules",
-      "cookyii\\modules\\Feed\\": "./modules/Feed",
-      "cookyii\\modules\\Account\\": "./modules/Account",
-      "cookyii\\modules\\Client\\": "./modules/Client",
-      "cookyii\\modules\\Order\\": "./modules/Order",
-      "cookyii\\modules\\Page\\": "./modules/Page",
-      "cookyii\\modules\\Postman\\": "./modules/Postman",
-      "cookyii\\modules\\Media\\": "./modules/Media",
-      "cookyii\\": "./components",
-      "resources\\": [
-        "./resources",
-        "./modules/Feed/resources",
-        "./modules/Account/resources",
-        "./modules/Client/resources",
-        "./modules/Order/resources",
-        "./modules/Page/resources",
-        "./modules/Postman/resources",
-        "./modules/Media/resources"
-      ]
+      "resources\\": "./resources"
     }
   },
   "extra": {
