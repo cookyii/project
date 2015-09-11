@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b16d94ed8457b18672be8e0e886a6558",
+    "hash": "da23e0023605cb77d8962a5bb4d33b4f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -315,15 +315,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "030b04d90968f5d2e8e92bcf9560832cce48cbcc"
+                "reference": "0de1bfbff96e04ececcda516c19a261f3c8769f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/030b04d90968f5d2e8e92bcf9560832cce48cbcc",
-                "reference": "030b04d90968f5d2e8e92bcf9560832cce48cbcc",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/0de1bfbff96e04ececcda516c19a261f3c8769f2",
+                "reference": "0de1bfbff96e04ececcda516c19a261f3c8769f2",
                 "shasum": ""
             },
             "require": {
+                "cookyii/module-media": "dev-master",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "2.0.*"
             },
@@ -340,8 +341,8 @@
             "authors": [
                 {
                     "name": "Revin Roman",
-                    "email": "roman@rmrevin.ru",
-                    "homepage": "https://rmrevin.ru/",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/",
                     "role": "Founder and project lead"
                 }
             ],
@@ -353,7 +354,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-09-07 17:56:42"
+            "time": "2015-09-11 20:16:02"
         },
         {
             "name": "cookyii/build",
@@ -414,25 +415,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "8d62f239c06fdb47dfcf154f8cac51d7b6ee27b1"
+                "reference": "b65689d29869822624e7f71b0afe9f620d43cdc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/8d62f239c06fdb47dfcf154f8cac51d7b6ee27b1",
-                "reference": "8d62f239c06fdb47dfcf154f8cac51d7b6ee27b1",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/b65689d29869822624e7f71b0afe9f620d43cdc7",
+                "reference": "b65689d29869822624e7f71b0afe9f620d43cdc7",
                 "shasum": ""
             },
             "require": {
                 "cookyii/base": "dev-master",
                 "cookyii/module-postman": "dev-master",
                 "php": ">=5.4.0",
-                "rmrevin/yii2-fontawesome": "~2.10"
+                "rmrevin/yii2-fontawesome": "~2.10",
+                "rmrevin/yii2-rbac-command": "~1.3",
+                "yiisoft/yii2-authclient": "2.0.*"
             },
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "cookyii\\modules\\Account\\": "",
-                    "resources\\": "./resources"
+                    "cookyii\\modules\\Account\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -442,8 +444,8 @@
             "authors": [
                 {
                     "name": "Revin Roman",
-                    "email": "roman@rmrevin.ru",
-                    "homepage": "https://rmrevin.ru/",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/",
                     "role": "Founder and project lead"
                 }
             ],
@@ -456,7 +458,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2015-09-07 17:42:14"
+            "time": "2015-09-11 20:25:58"
         },
         {
             "name": "cookyii/module-client",
@@ -464,12 +466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-client.git",
-                "reference": "b79226cefe522cb2dc9b7f966c2510abd6bf44ab"
+                "reference": "9f5c73af3f5e1fbe771efcf70b27b6449b310ea0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-client/zipball/b79226cefe522cb2dc9b7f966c2510abd6bf44ab",
-                "reference": "b79226cefe522cb2dc9b7f966c2510abd6bf44ab",
+                "url": "https://api.github.com/repos/cookyii/module-client/zipball/9f5c73af3f5e1fbe771efcf70b27b6449b310ea0",
+                "reference": "9f5c73af3f5e1fbe771efcf70b27b6449b310ea0",
                 "shasum": ""
             },
             "require": {
@@ -480,8 +482,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "cookyii\\modules\\Client\\": "",
-                    "resources\\": "./resources"
+                    "cookyii\\modules\\Client\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -490,16 +491,16 @@
             ],
             "authors": [
                 {
-                    "name": "Revin Roman",
-                    "email": "roman@rmrevin.ru",
-                    "homepage": "https://rmrevin.ru/",
-                    "role": "Founder and project lead"
-                },
-                {
                     "name": "Alexander Volkov",
                     "email": "volkkb@gmail.com",
                     "homepage": "https://github.com/VolkovAlexander",
                     "role": "Contributor"
+                },
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/",
+                    "role": "Founder and project lead"
                 }
             ],
             "description": "Client management module for Cookyii CMF",
@@ -510,7 +511,7 @@
                 "module",
                 "yii2"
             ],
-            "time": "2015-07-19 11:26:28"
+            "time": "2015-09-11 20:29:45"
         },
         {
             "name": "cookyii/module-feed",
@@ -518,12 +519,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-feed.git",
-                "reference": "b99afed4ee14abad071868aaff2e8ae3d4f12f53"
+                "reference": "2161ebdcac8e98d34f482a09f9ae77520ecbd8c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/b99afed4ee14abad071868aaff2e8ae3d4f12f53",
-                "reference": "b99afed4ee14abad071868aaff2e8ae3d4f12f53",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/2161ebdcac8e98d34f482a09f9ae77520ecbd8c0",
+                "reference": "2161ebdcac8e98d34f482a09f9ae77520ecbd8c0",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +563,7 @@
                 "news",
                 "yii2"
             ],
-            "time": "2015-08-13 18:23:54"
+            "time": "2015-09-07 18:02:23"
         },
         {
             "name": "cookyii/module-media",
@@ -570,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-media.git",
-                "reference": "343aaee2c4d7faab9d9d246fce74069c8bad8df0"
+                "reference": "5a781275dcc8eab62de1e74bc4d461d9fc1eeb57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-media/zipball/343aaee2c4d7faab9d9d246fce74069c8bad8df0",
-                "reference": "343aaee2c4d7faab9d9d246fce74069c8bad8df0",
+                "url": "https://api.github.com/repos/cookyii/module-media/zipball/5a781275dcc8eab62de1e74bc4d461d9fc1eeb57",
+                "reference": "5a781275dcc8eab62de1e74bc4d461d9fc1eeb57",
                 "shasum": ""
             },
             "require": {
@@ -587,8 +588,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "cookyii\\modules\\Media\\": "",
-                    "resources\\": "./resources"
+                    "cookyii\\modules\\Media\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -598,8 +598,8 @@
             "authors": [
                 {
                     "name": "Revin Roman",
-                    "email": "roman@rmrevin.ru",
-                    "homepage": "https://rmrevin.ru/",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/",
                     "role": "Founder and project lead"
                 }
             ],
@@ -616,7 +616,7 @@
                 "video",
                 "yii2"
             ],
-            "time": "2015-08-13 18:25:08"
+            "time": "2015-09-11 20:12:16"
         },
         {
             "name": "cookyii/module-page",
@@ -624,12 +624,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-page.git",
-                "reference": "f794bd540b67db40c61675841be1fe8d16cd316d"
+                "reference": "fa34c50fb66f4848cec4106eba3fa11449bb3c66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-page/zipball/f794bd540b67db40c61675841be1fe8d16cd316d",
-                "reference": "f794bd540b67db40c61675841be1fe8d16cd316d",
+                "url": "https://api.github.com/repos/cookyii/module-page/zipball/fa34c50fb66f4848cec4106eba3fa11449bb3c66",
+                "reference": "fa34c50fb66f4848cec4106eba3fa11449bb3c66",
                 "shasum": ""
             },
             "require": {
@@ -642,8 +642,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "cookyii\\modules\\Page\\": "",
-                    "resources\\": "./resources"
+                    "cookyii\\modules\\Page\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -653,8 +652,8 @@
             "authors": [
                 {
                     "name": "Revin Roman",
-                    "email": "roman@rmrevin.ru",
-                    "homepage": "https://rmrevin.ru/",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/",
                     "role": "Founder and project lead"
                 }
             ],
@@ -667,7 +666,7 @@
                 "static",
                 "yii2"
             ],
-            "time": "2015-08-13 18:26:27"
+            "time": "2015-09-11 20:28:42"
         },
         {
             "name": "cookyii/module-postman",
@@ -675,12 +674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-postman.git",
-                "reference": "3124f26a7b752cfa3da4426a246f3c4671d3cab2"
+                "reference": "6f7ec90ac788185f912f4d16d656d305c851b70d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/3124f26a7b752cfa3da4426a246f3c4671d3cab2",
-                "reference": "3124f26a7b752cfa3da4426a246f3c4671d3cab2",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/6f7ec90ac788185f912f4d16d656d305c851b70d",
+                "reference": "6f7ec90ac788185f912f4d16d656d305c851b70d",
                 "shasum": ""
             },
             "require": {
@@ -692,8 +691,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "cookyii\\modules\\Postman\\": "",
-                    "resources\\": "./resources"
+                    "cookyii\\modules\\Postman\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -703,8 +701,8 @@
             "authors": [
                 {
                     "name": "Revin Roman",
-                    "email": "roman@rmrevin.ru",
-                    "homepage": "https://rmrevin.ru/",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/",
                     "role": "Founder and project lead"
                 }
             ],
@@ -718,7 +716,7 @@
                 "queue",
                 "yii2"
             ],
-            "time": "2015-08-18 09:26:13"
+            "time": "2015-09-11 20:18:10"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1488,16 +1486,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
+                "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
-                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/9ff9032151186bd66ecee727d728f1319f52d1d8",
+                "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8",
                 "shasum": ""
             },
             "require": {
@@ -1541,20 +1539,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-28 15:18:12"
+            "time": "2015-09-03 11:40:38"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "9310b5f9a87ec2ea75d20fec0b0017c77c66dac3"
+                "reference": "b58c916f1db03a611b72dd702564f30ad8fe83fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/9310b5f9a87ec2ea75d20fec0b0017c77c66dac3",
-                "reference": "9310b5f9a87ec2ea75d20fec0b0017c77c66dac3",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/b58c916f1db03a611b72dd702564f30ad8fe83fa",
+                "reference": "b58c916f1db03a611b72dd702564f30ad8fe83fa",
                 "shasum": ""
             },
             "require": {
@@ -1599,20 +1597,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-18 19:21:56"
+            "time": "2015-08-24 07:13:45"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "2d7b2ddaf3f548f4292df49a99d19c853d43f0b8"
+                "reference": "f079e9933799929584200b9a926f72f29e291654"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/2d7b2ddaf3f548f4292df49a99d19c853d43f0b8",
-                "reference": "2d7b2ddaf3f548f4292df49a99d19c853d43f0b8",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/f079e9933799929584200b9a926f72f29e291654",
+                "reference": "f079e9933799929584200b9a926f72f29e291654",
                 "shasum": ""
             },
             "require": {
@@ -1648,20 +1646,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-08-27 07:03:44"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "ae0f363277485094edc04c9f3cbe595b183b78e4"
+                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/ae0f363277485094edc04c9f3cbe595b183b78e4",
-                "reference": "ae0f363277485094edc04c9f3cbe595b183b78e4",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/fff4b0c362640a0ab7355e2647b3d461608e9065",
+                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065",
                 "shasum": ""
             },
             "require": {
@@ -1697,7 +1695,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-08-26 17:56:37"
         },
         {
             "name": "yiisoft/yii2",
@@ -3465,16 +3463,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/BrowserKit.git",
-                "reference": "176905d3d74c2f99e6ab70f4f5a89460532495ae"
+                "reference": "277a2457776d4cc25706fbdd9d1e4ab2dac884e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/176905d3d74c2f99e6ab70f4f5a89460532495ae",
-                "reference": "176905d3d74c2f99e6ab70f4f5a89460532495ae",
+                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/277a2457776d4cc25706fbdd9d1e4ab2dac884e4",
+                "reference": "277a2457776d4cc25706fbdd9d1e4ab2dac884e4",
                 "shasum": ""
             },
             "require": {
@@ -3516,20 +3514,20 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-09-06 08:36:38"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/CssSelector.git",
-                "reference": "0b5c07b516226b7dd32afbbc82fe547a469c5092"
+                "reference": "ffb5f3b8a75f8d1b9801e74dc6789a0751a670ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/0b5c07b516226b7dd32afbbc82fe547a469c5092",
-                "reference": "0b5c07b516226b7dd32afbbc82fe547a469c5092",
+                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/ffb5f3b8a75f8d1b9801e74dc6789a0751a670ad",
+                "reference": "ffb5f3b8a75f8d1b9801e74dc6789a0751a670ad",
                 "shasum": ""
             },
             "require": {
@@ -3569,20 +3567,20 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-15 13:33:16"
+            "time": "2015-08-24 07:13:45"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "9dabece63182e95c42b06967a0d929a5df78bc35"
+                "reference": "2a161e4ee2b2f33d4153be58df4f6f2a5506936e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/9dabece63182e95c42b06967a0d929a5df78bc35",
-                "reference": "9dabece63182e95c42b06967a0d929a5df78bc35",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/2a161e4ee2b2f33d4153be58df4f6f2a5506936e",
+                "reference": "2a161e4ee2b2f33d4153be58df4f6f2a5506936e",
                 "shasum": ""
             },
             "require": {
@@ -3622,20 +3620,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-08-26 10:48:03"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/2dc7b06c065df96cc686c66da2705e5e18aef661",
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661",
                 "shasum": ""
             },
             "require": {
@@ -3671,7 +3669,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-28 14:07:07"
+            "time": "2015-08-24 07:13:45"
         },
         {
             "name": "yiisoft/yii2-codeception",

@@ -2,13 +2,13 @@
 /**
  * params.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://rmrevin.com
  */
 
 return [
     'component.user' => [
         'class' => 'yii\web\User',
-        'identityClass' => 'resources\Account',
+        'identityClass' => 'cookyii\modules\Account\resources\Account',
         'enableAutoLogin' => true,
         'loginUrl' => ['/'],
     ],

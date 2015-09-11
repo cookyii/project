@@ -2,7 +2,7 @@
 /**
  * _menu-right.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://rmrevin.com
  */
 
 $menu = [];
@@ -23,7 +23,7 @@ if (User()->isGuest) {
         'selected' => false,
     ];
 } else {
-    /** @var \resources\Account $Account */
+    /** @var \cookyii\modules\Account\resources\Account $Account */
     $Account = User()->identity;
 
     $menu[] = [

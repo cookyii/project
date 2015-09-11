@@ -13,8 +13,8 @@
   "authors": [
     {
       "name": "Revin Roman",
-      "email": "roman@rmrevin.ru",
-      "homepage": "https://rmrevin.ru/",
+      "email": "roman@rmrevin.com",
+      "homepage": "https://rmrevin.com/",
       "role": "Founder and project lead"
     }
   ],
@@ -27,6 +27,13 @@
   "require": {
     "php": ">=5.4.0",
 
+    "yiisoft/yii2": "2.0.6",
+    "yiisoft/yii2-composer": "2.0.*",
+    "yiisoft/yii2-bootstrap": "2.0.*",
+    "yiisoft/yii2-imagine": "2.0.*",
+    "yiisoft/yii2-authclient": "2.0.*",
+    "yiisoft/yii2-swiftmailer": "2.0.*",
+
     "cookyii/build": "dev-master",
     "cookyii/base": "dev-master",
     "cookyii/module-feed": "dev-master",
@@ -35,13 +42,6 @@
     "cookyii/module-page": "dev-master",
     "cookyii/module-postman": "dev-master",
     "cookyii/module-media": "dev-master",
-
-    "yiisoft/yii2": "2.0.6",
-    "yiisoft/yii2-composer": "2.0.*",
-    "yiisoft/yii2-bootstrap": "2.0.*",
-    "yiisoft/yii2-imagine": "2.0.*",
-    "yiisoft/yii2-authclient": "2.0.*",
-    "yiisoft/yii2-swiftmailer": "2.0.*",
 
     "rmrevin/yii2-fontawesome": "~2.10",
     "rmrevin/yii2-socicon": "~1.0",
@@ -65,14 +65,14 @@
   },
   "autoload": {
     "psr-4": {
-      "dev\\": "./dev",
+      "common\\": "./common",
+      "resources\\": "./resources",
       "frontend\\": "./frontend-app",
       "frontend\\modules\\": "./frontend-modules",
       "backend\\": "./backend-app",
       "backend\\modules\\": "./backend-modules",
       "crm\\": "./crm-app",
-      "crm\\modules\\": "./crm-modules",
-      "resources\\": "./resources"
+      "crm\\modules\\": "./crm-modules"
     }
   },
   "extra": {

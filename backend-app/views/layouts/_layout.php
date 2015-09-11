@@ -2,7 +2,7 @@
 /**
  * _layout.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://rmrevin.com
  *
  * @var yii\web\View $this
  * @var string $content
@@ -21,7 +21,7 @@ $title = empty($this->title)
 /** @var \backend\components\Controller $controller */
 $controller = $this->context;
 
-/** @var \resources\Account|null $User */
+/** @var \cookyii\modules\Account\resources\Account|null $User */
 $User = User()->identity;
 
 $this->registerLinkTag(['rel' => 'canonical', 'href' => \yii\helpers\Url::canonical()]);

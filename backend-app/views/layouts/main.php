@@ -2,7 +2,7 @@
 /**
  * main.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://rmrevin.com
  *
  * @var yii\web\View $this
  * @var string $content
@@ -10,7 +10,7 @@
 
 use yii\helpers\Html;
 
-/** @var \resources\Account $Account */
+/** @var \cookyii\modules\Account\resources\Account $Account */
 $Account = User()->identity;
 
 $this->beginContent('@app/views/layouts/_layout.php', ['content' => $content]);
