@@ -315,12 +315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "0de1bfbff96e04ececcda516c19a261f3c8769f2"
+                "reference": "015443a6139ffa1d4776da7a19364d563ffb79ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/0de1bfbff96e04ececcda516c19a261f3c8769f2",
-                "reference": "0de1bfbff96e04ececcda516c19a261f3c8769f2",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/015443a6139ffa1d4776da7a19364d563ffb79ad",
+                "reference": "015443a6139ffa1d4776da7a19364d563ffb79ad",
                 "shasum": ""
             },
             "require": {
@@ -354,7 +354,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-09-11 20:16:02"
+            "time": "2015-09-12 09:47:10"
         },
         {
             "name": "cookyii/build",
@@ -415,12 +415,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "b65689d29869822624e7f71b0afe9f620d43cdc7"
+                "reference": "ac3f0d7835d1d96029f0da012ded923e6d9f50ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/b65689d29869822624e7f71b0afe9f620d43cdc7",
-                "reference": "b65689d29869822624e7f71b0afe9f620d43cdc7",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/ac3f0d7835d1d96029f0da012ded923e6d9f50ad",
+                "reference": "ac3f0d7835d1d96029f0da012ded923e6d9f50ad",
                 "shasum": ""
             },
             "require": {
@@ -458,7 +458,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2015-09-11 20:25:58"
+            "time": "2015-09-12 09:50:23"
         },
         {
             "name": "cookyii/module-client",
@@ -466,16 +466,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-client.git",
-                "reference": "9f5c73af3f5e1fbe771efcf70b27b6449b310ea0"
+                "reference": "6bbf89966aae2b21090f80312a5349695a5af9b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-client/zipball/9f5c73af3f5e1fbe771efcf70b27b6449b310ea0",
-                "reference": "9f5c73af3f5e1fbe771efcf70b27b6449b310ea0",
+                "url": "https://api.github.com/repos/cookyii/module-client/zipball/6bbf89966aae2b21090f80312a5349695a5af9b1",
+                "reference": "6bbf89966aae2b21090f80312a5349695a5af9b1",
                 "shasum": ""
             },
             "require": {
                 "cookyii/base": "dev-master",
+                "cookyii/module-account": "dev-master",
                 "php": ">=5.4.0",
                 "rmrevin/yii2-fontawesome": "~2.10"
             },
@@ -511,7 +512,7 @@
                 "module",
                 "yii2"
             ],
-            "time": "2015-09-11 20:29:45"
+            "time": "2015-09-12 09:53:50"
         },
         {
             "name": "cookyii/module-feed",
@@ -519,12 +520,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-feed.git",
-                "reference": "2161ebdcac8e98d34f482a09f9ae77520ecbd8c0"
+                "reference": "c8eefb02797d820b7b78ee85f179ed28a1b2babf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/2161ebdcac8e98d34f482a09f9ae77520ecbd8c0",
-                "reference": "2161ebdcac8e98d34f482a09f9ae77520ecbd8c0",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/c8eefb02797d820b7b78ee85f179ed28a1b2babf",
+                "reference": "c8eefb02797d820b7b78ee85f179ed28a1b2babf",
                 "shasum": ""
             },
             "require": {
@@ -536,8 +537,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "cookyii\\modules\\Feed\\": "",
-                    "resources\\": "./resources"
+                    "cookyii\\modules\\Feed\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -547,8 +547,8 @@
             "authors": [
                 {
                     "name": "Revin Roman",
-                    "email": "roman@rmrevin.ru",
-                    "homepage": "https://rmrevin.ru/",
+                    "email": "roman@rmrevin.com",
+                    "homepage": "https://rmrevin.com/",
                     "role": "Founder and project lead"
                 }
             ],
@@ -563,7 +563,7 @@
                 "news",
                 "yii2"
             ],
-            "time": "2015-09-07 18:02:23"
+            "time": "2015-09-11 21:19:56"
         },
         {
             "name": "cookyii/module-media",
@@ -571,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-media.git",
-                "reference": "5a781275dcc8eab62de1e74bc4d461d9fc1eeb57"
+                "reference": "97389337bd5c883388d72e5ea630873252bb5083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-media/zipball/5a781275dcc8eab62de1e74bc4d461d9fc1eeb57",
-                "reference": "5a781275dcc8eab62de1e74bc4d461d9fc1eeb57",
+                "url": "https://api.github.com/repos/cookyii/module-media/zipball/97389337bd5c883388d72e5ea630873252bb5083",
+                "reference": "97389337bd5c883388d72e5ea630873252bb5083",
                 "shasum": ""
             },
             "require": {
@@ -616,7 +616,7 @@
                 "video",
                 "yii2"
             ],
-            "time": "2015-09-11 20:12:16"
+            "time": "2015-09-11 21:20:08"
         },
         {
             "name": "cookyii/module-page",
@@ -624,12 +624,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-page.git",
-                "reference": "fa34c50fb66f4848cec4106eba3fa11449bb3c66"
+                "reference": "033f301a6ea8893e7f0993330ebb2bf388aa35f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-page/zipball/fa34c50fb66f4848cec4106eba3fa11449bb3c66",
-                "reference": "fa34c50fb66f4848cec4106eba3fa11449bb3c66",
+                "url": "https://api.github.com/repos/cookyii/module-page/zipball/033f301a6ea8893e7f0993330ebb2bf388aa35f3",
+                "reference": "033f301a6ea8893e7f0993330ebb2bf388aa35f3",
                 "shasum": ""
             },
             "require": {
@@ -666,7 +666,7 @@
                 "static",
                 "yii2"
             ],
-            "time": "2015-09-11 20:28:42"
+            "time": "2015-09-11 21:20:23"
         },
         {
             "name": "cookyii/module-postman",
@@ -674,12 +674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-postman.git",
-                "reference": "6f7ec90ac788185f912f4d16d656d305c851b70d"
+                "reference": "6b513d7e52a5838b64b62b9d062d0746f84e5ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/6f7ec90ac788185f912f4d16d656d305c851b70d",
-                "reference": "6f7ec90ac788185f912f4d16d656d305c851b70d",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/6b513d7e52a5838b64b62b9d062d0746f84e5ac6",
+                "reference": "6b513d7e52a5838b64b62b9d062d0746f84e5ac6",
                 "shasum": ""
             },
             "require": {
@@ -716,7 +716,7 @@
                 "queue",
                 "yii2"
             ],
-            "time": "2015-09-11 20:18:10"
+            "time": "2015-09-11 21:20:41"
         },
         {
             "name": "ezyang/htmlpurifier",
