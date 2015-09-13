@@ -126,6 +126,16 @@ $config = [
             'commandline' => './frontend rbac/update',
         ],
     ],
+
+    'extract' => [
+        '.description' => 'Extract codebase to split repos',
+        '.depends' => [
+            'clear',
+        ],
+        '.task' => [
+            'class' => 'dev\build\ExtractTask',
+        ],
+    ],
 ];
 
 // create applications tasks
