@@ -316,12 +316,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "cd28c9ea5cd279aaa7bf7b867f37a257cc786920"
+                "reference": "c37b4b92fa7381a773c706b354147d9e5d1f4eb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/cd28c9ea5cd279aaa7bf7b867f37a257cc786920",
-                "reference": "cd28c9ea5cd279aaa7bf7b867f37a257cc786920",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/c37b4b92fa7381a773c706b354147d9e5d1f4eb6",
+                "reference": "c37b4b92fa7381a773c706b354147d9e5d1f4eb6",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-09-24 17:17:54"
+            "time": "2015-09-24 17:39:55"
         },
         {
             "name": "cookyii/build",
