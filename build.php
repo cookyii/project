@@ -5,6 +5,9 @@
  * @link https://rmrevin.com
  */
 
+require __DIR__ . '/dev/build/ExtractTask.php';
+require __DIR__ . '/dev/build/InstallTask.php';
+
 /** @var array $apps list of existing applications */
 $apps = ['frontend', 'backend', 'crm'];
 
@@ -16,6 +19,16 @@ $config = [
     'default' => [
         '.description' => 'Default build',
         '.depends' => ['env/dev'],
+    ],
+
+    'install' => [
+        '.task' => [
+            'class' => 'dev\build\InstallTask',
+            'mysqlUserName' => 'cookyii',
+            'database' => [
+                'main' => 'cookyii',
+            ],
+        ],
     ],
 
     'map' => [
@@ -145,7 +158,7 @@ $config = [
         '.task' => [
             'class' => 'cookyii\build\tasks\CommandTask',
             'commandline' => './yii migrate --interactive=0',
-        ]
+        ],
     ],
 
     'rbac' => [
@@ -153,6 +166,16 @@ $config = [
         '.task' => [
             'class' => 'cookyii\build\tasks\CommandTask',
             'commandline' => './yii rbac/update',
+        ],
+    ],
+
+    'extract' => [
+        '.description' => 'Extract codebase to split repos',
+        '.depends' => [
+            'clear',
+        ],
+        '.task' => [
+            'class' => 'dev\build\ExtractTask',
         ],
     ],
 ];
@@ -194,7 +217,7 @@ function getPath($app, $key = null)
  */
 function appendClearTask(array &$config, $task_name, $app)
 {
-    appendEmptyTask($config, $task_name);
+    prepareEmptyTask($config, $task_name);
 
     $path_list = getPath($app);
 
@@ -220,7 +243,7 @@ function appendClearTask(array &$config, $task_name, $app)
  */
 function appendLessTask(array &$config, $task_name, $app)
 {
-    appendEmptyTask($config, $task_name);
+    prepareEmptyTask($config, $task_name);
 
     $config[$task_name]['.depends'][] = sprintf('*/%s', $app);
     $config[$task_name][$app] = [
@@ -238,7 +261,7 @@ function appendLessTask(array &$config, $task_name, $app)
  * @param array $config
  * @param string $task_name
  */
-function appendEmptyTask(array &$config, $task_name)
+function prepareEmptyTask(array &$config, $task_name)
 {
     if (!isset($config[$task_name])) {
         $config[$task_name] = [];
@@ -265,9 +288,7 @@ function cmd($app, $command)
     );
 
     return str_replace(
-        array_map(function ($val) {
-            return sprintf('{%s}', $val);
-        }, array_keys($path_list)),
+        array_map(function ($val) { return sprintf('{%s}', $val); }, array_keys($path_list)),
         array_values($path_list),
         $command
     );
@@ -282,9 +303,7 @@ function automaticDetectionApplications(array &$apps)
     if (is_resource($handler)) {
         while (($file = readdir($handler)) !== false) {
             if (preg_match('|^([a-zA-Z0-9\-]+)\-app$|i', $file, $m)) {
-                $app = $m[1];
-                $cmd = __DIR__ . DIRECTORY_SEPARATOR . $app;
-                if (!in_array($app, $apps, true) && file_exists($cmd)) {
+                if (!in_array($m[1], $apps, true)) {
                     $apps[] = $m[1];
                 }
             }
