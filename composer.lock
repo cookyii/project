@@ -519,12 +519,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-media.git",
-                "reference": "0e5c74d628d94f70181881ef9e789fbaf6aa2abf"
+                "reference": "90510503f89144811ff6bae0b36d61a16a31fa5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-media/zipball/0e5c74d628d94f70181881ef9e789fbaf6aa2abf",
-                "reference": "0e5c74d628d94f70181881ef9e789fbaf6aa2abf",
+                "url": "https://api.github.com/repos/cookyii/module-media/zipball/90510503f89144811ff6bae0b36d61a16a31fa5d",
+                "reference": "90510503f89144811ff6bae0b36d61a16a31fa5d",
                 "shasum": ""
             },
             "require": {
@@ -564,7 +564,7 @@
                 "video",
                 "yii2"
             ],
-            "time": "2015-12-08 09:27:46"
+            "time": "2015-12-08 09:54:05"
         },
         {
             "name": "cookyii/module-page",
