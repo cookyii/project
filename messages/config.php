@@ -2,16 +2,17 @@
 /**
  * config.php
  * @author Revin Roman
+ * @link https://rmrevin.com
  */
 
 return [
     'sourcePath' => __DIR__ . '/..',
     'messagePath' => __DIR__,
-    'languages' => ['en', 'ru'],
+    'languages' => ['en', 'ru', 'de'],
     'translator' => 'Yii::t',
     'sort' => false,
     'overwrite' => true,
-    'removeUnused' => true,
+    'removeUnused' => false,
     'except' => [
         '.svn',
         '.git',
@@ -20,7 +21,9 @@ return [
         '.hgignore',
         '.hgkeep',
         '/messages',
-        '/vendor',
+        '/*/runtime',
+        '/vendor/*',
+        '!/vendor/cookyii',
     ],
     'only' => ['*.php'],
     'format' => 'php',
