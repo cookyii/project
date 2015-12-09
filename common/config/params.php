@@ -21,7 +21,17 @@ if (empty($crm)) {
     throw new \yii\base\InvalidConfigException('You must specify the url for the crm application (CRM_URL).');
 }
 
+$cookieDomain = str_replace('backend', '', parse_url(BACKEND_URL, PHP_URL_HOST));
+
 return [
+    'module.media' => [
+        'class' => cookyii\modules\Media\Module::className(),
+    ],
+    'module.postman' => [
+        'class' => cookyii\modules\Postman\Module::className(),
+        'subjectPrefix' => 'Cookyii //',
+    ],
+
     'component.db' => [
         'class' => yii\db\Connection::className(),
         'charset' => 'utf8',
@@ -32,7 +42,7 @@ return [
         'dsn' => DB_DSN,
         'username' => DB_USER,
         'password' => DB_PASS,
-        'tablePrefix' => 'yii_'
+        'tablePrefix' => 'yii_',
     ],
     'component.mailer' => [
         'class' => yii\swiftmailer\Mailer::className(),
@@ -55,6 +65,10 @@ return [
     ],
     'component.session' => [
         'class' => yii\web\DbSession::className(),
+        'cookieParams' => [
+            'httpOnly' => true,
+            'domain' => $cookieDomain,
+        ],
     ],
     'component.security' => [
         'class' => yii\base\Security::className(),
@@ -71,8 +85,13 @@ return [
     'component.user' => [
         'class' => yii\web\User::className(),
         'enableAutoLogin' => true,
-        'identityClass' => cookyii\modules\Account\resources\Account::className(),
         'loginUrl' => ['/account/sign/in'],
+        'identityClass' => cookyii\modules\Account\resources\Account::className(),
+        'identityCookie' => [
+            'name' => '_identity',
+            'httpOnly' => true,
+            'domain' => $cookieDomain,
+        ],
     ],
     'component.authManager' => [
         'class' => yii\rbac\DbManager::className(),
@@ -137,15 +156,21 @@ return [
     'component.i18n' => [
         'class' => yii\i18n\I18N::className(),
         'translations' => [
-            'cookyii' => yii\i18n\PhpMessageSource::className(),
+            'app*' => [
+                'class' => yii\i18n\PhpMessageSource::className(),
+                'basePath' => '@messages',
+            ],
+            'cookyii*' => [
+                'class' => yii\i18n\PhpMessageSource::className(),
+                'basePath' => '@cookyii/base/messages',
+            ],
         ],
     ],
     'component.formatter' => [
         'class' => cookyii\i18n\Formatter::className(),
-        'locale' => 'en',
         'timeZone' => 'Etc/GMT',
         'dateFormat' => 'dd MMMM y',
         'timeFormat' => 'HH:mm',
-        'datetimeFormat' => 'dd MMMM y HH:mm',
+        'datetimeFormat' => 'dd.MM.y HH:mm',
     ],
 ];

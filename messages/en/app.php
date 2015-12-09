@@ -17,24 +17,16 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Action' => null,
-    'Another action' => '',
+    'Back to index' => '',
     'Dashboard' => '',
-    'Dropdown' => '',
     'Error' => '',
     'Error {number}' => '',
-    'Link' => '',
-    'Media module not configured' => '',
-    'Model must be `{class}`.' => '',
-    'Model must contain an attribute `{attribute}`.' => '',
-    'One more separated link' => '',
+    'Meanwhile, you may {return to dashboard}.' => '',
     'Profile' => '',
-    'Separated link' => '',
     'Sign in' => '',
     'Sign out' => '',
     'Sign up' => '',
-    'Something else here' => '',
     'Terms of use' => '',
-    'Вернуться на главную' => '',
-    'Отменить' => '',
+    'We will work on fixing that right away.' => '',
+    'return to dashboard' => '',
 ];
