@@ -316,12 +316,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "ae5750684185b878ba89fb873b274d65bc3f2fe6"
+                "reference": "62e1bee191167490378a58cf1900560ca07f4e2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/ae5750684185b878ba89fb873b274d65bc3f2fe6",
-                "reference": "ae5750684185b878ba89fb873b274d65bc3f2fe6",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/62e1bee191167490378a58cf1900560ca07f4e2b",
+                "reference": "62e1bee191167490378a58cf1900560ca07f4e2b",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-12-19 00:11:15"
+            "time": "2015-12-24 21:17:10"
         },
         {
             "name": "cookyii/module-account",
@@ -1093,16 +1093,16 @@
         },
         {
             "name": "rmrevin/yii2-rbac-command",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-rbac-command.git",
-                "reference": "b69fd9a559369b42af98d4d7344f8e07885f9891"
+                "reference": "48d5fe92e0567094cd27c7640e39a5dd3f28901f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-rbac-command/zipball/b69fd9a559369b42af98d4d7344f8e07885f9891",
-                "reference": "b69fd9a559369b42af98d4d7344f8e07885f9891",
+                "url": "https://api.github.com/repos/rmrevin/yii2-rbac-command/zipball/48d5fe92e0567094cd27c7640e39a5dd3f28901f",
+                "reference": "48d5fe92e0567094cd27c7640e39a5dd3f28901f",
                 "shasum": ""
             },
             "require": {
@@ -1132,7 +1132,7 @@
                 "rbac",
                 "yii"
             ],
-            "time": "2015-06-19 17:36:50"
+            "time": "2015-12-23 09:10:50"
         },
         {
             "name": "rmrevin/yii2-rollbar",
