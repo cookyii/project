@@ -316,12 +316,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "73b8f65514ce68974bff0910f54969bb9f46dfc9"
+                "reference": "73ffa8e6963d28f3b35b52730d1cb441977c498d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/73b8f65514ce68974bff0910f54969bb9f46dfc9",
-                "reference": "73b8f65514ce68974bff0910f54969bb9f46dfc9",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/73ffa8e6963d28f3b35b52730d1cb441977c498d",
+                "reference": "73ffa8e6963d28f3b35b52730d1cb441977c498d",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2016-02-06 21:28:50"
+            "time": "2016-02-06 22:04:54"
         },
         {
             "name": "cookyii/module-account",
@@ -622,12 +622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-postman.git",
-                "reference": "5ec574872ca970ebb67aedb2cdae873dbe540b66"
+                "reference": "1865c437203e58c1c4bc06f23ffe8f935316961f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/5ec574872ca970ebb67aedb2cdae873dbe540b66",
-                "reference": "5ec574872ca970ebb67aedb2cdae873dbe540b66",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/1865c437203e58c1c4bc06f23ffe8f935316961f",
+                "reference": "1865c437203e58c1c4bc06f23ffe8f935316961f",
                 "shasum": ""
             },
             "require": {
@@ -664,7 +664,7 @@
                 "queue",
                 "yii2"
             ],
-            "time": "2016-02-06 21:42:42"
+            "time": "2016-02-06 22:05:02"
         },
         {
             "name": "cookyii/module-translation",
