@@ -18,12 +18,17 @@ return array_merge($config, [
     'controllerNamespace' => 'console\controllers',
     'controllerMap' => [
         'account' => cookyii\modules\Account\commands\AccountCommand::className(),
+        'postman' => cookyii\modules\Postman\commands\PostmanCommand::className(),
         'migrate' => [
             'class' => cookyii\console\controllers\MigrateController::className(),
             'templateFile' => '@console/views/migration.php',
         ],
     ],
-    'bootstrap' => ['log', 'rollbar'],
+    'bootstrap' => ['log'],
+    'modules' => [
+        'media' => $params['module.media'],
+        'postman' => $params['module.postman'],
+    ],
     'components' => [
         'db' => $params['component.db'],
         'security' => $params['component.security'],
@@ -39,9 +44,8 @@ return array_merge($config, [
         'i18n' => $params['component.i18n'],
         'formatter' => $params['component.formatter'],
         'log' => $params['component.log'],
-        'rollbar' => $params['component.rollbar'],
         'errorHandler' => [
-            'class' => rmrevin\yii\rollbar\console\ErrorHandler::className(),
+            'class' => yii\console\ErrorHandler::className(),
         ],
     ],
     'params' => $params,
