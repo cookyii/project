@@ -316,12 +316,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "34e9242fd666b17158e4f205ebe42712954846b1"
+                "reference": "5fbe50a5fc4dd5ab621574c91e77b89f09bea658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/34e9242fd666b17158e4f205ebe42712954846b1",
-                "reference": "34e9242fd666b17158e4f205ebe42712954846b1",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/5fbe50a5fc4dd5ab621574c91e77b89f09bea658",
+                "reference": "5fbe50a5fc4dd5ab621574c91e77b89f09bea658",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2016-02-07 14:18:14"
+            "time": "2016-02-07 14:45:51"
         },
         {
             "name": "cookyii/module-account",
