@@ -345,12 +345,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "dd08d6dac6981f188eea4f26b0a514fee673d196"
+                "reference": "4fe829412fdd3773189c40cb2d10f7f4e769c19e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/dd08d6dac6981f188eea4f26b0a514fee673d196",
-                "reference": "dd08d6dac6981f188eea4f26b0a514fee673d196",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/4fe829412fdd3773189c40cb2d10f7f4e769c19e",
+                "reference": "4fe829412fdd3773189c40cb2d10f7f4e769c19e",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +388,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2016-03-22 20:26:14"
+            "time": "2016-03-22 20:39:00"
         },
         {
             "name": "cookyii/module-client",
@@ -396,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-client.git",
-                "reference": "620277d985a05703cc6de0d90850335524fce5de"
+                "reference": "4e453c446b1b8744bb30dfbb795dd0b81be9bf90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-client/zipball/620277d985a05703cc6de0d90850335524fce5de",
-                "reference": "620277d985a05703cc6de0d90850335524fce5de",
+                "url": "https://api.github.com/repos/cookyii/module-client/zipball/4e453c446b1b8744bb30dfbb795dd0b81be9bf90",
+                "reference": "4e453c446b1b8744bb30dfbb795dd0b81be9bf90",
                 "shasum": ""
             },
             "require": {
@@ -442,7 +442,7 @@
                 "module",
                 "yii2"
             ],
-            "time": "2016-03-22 20:26:29"
+            "time": "2016-03-22 20:39:13"
         },
         {
             "name": "cookyii/module-feed",
@@ -450,12 +450,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-feed.git",
-                "reference": "36462808c6c75dfb81649a8eed61cae72f711c16"
+                "reference": "a3f4848418e6e3bed9bf40781dff3c64a7a13299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/36462808c6c75dfb81649a8eed61cae72f711c16",
-                "reference": "36462808c6c75dfb81649a8eed61cae72f711c16",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/a3f4848418e6e3bed9bf40781dff3c64a7a13299",
+                "reference": "a3f4848418e6e3bed9bf40781dff3c64a7a13299",
                 "shasum": ""
             },
             "require": {
@@ -493,7 +493,7 @@
                 "news",
                 "yii2"
             ],
-            "time": "2016-03-22 20:26:48"
+            "time": "2016-03-22 20:39:27"
         },
         {
             "name": "cookyii/module-media",
@@ -604,12 +604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-postman.git",
-                "reference": "4b77a62e719a4f62574100b34a20e2625421901c"
+                "reference": "c22b37aaf7ffb636fffedcd93a04fc62cb5a2df3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/4b77a62e719a4f62574100b34a20e2625421901c",
-                "reference": "4b77a62e719a4f62574100b34a20e2625421901c",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/c22b37aaf7ffb636fffedcd93a04fc62cb5a2df3",
+                "reference": "c22b37aaf7ffb636fffedcd93a04fc62cb5a2df3",
                 "shasum": ""
             },
             "require": {
@@ -646,7 +646,7 @@
                 "queue",
                 "yii2"
             ],
-            "time": "2016-03-22 20:27:27"
+            "time": "2016-03-22 20:39:55"
         },
         {
             "name": "cookyii/module-translation",
