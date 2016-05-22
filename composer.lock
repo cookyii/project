@@ -4,234 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "707a5e655f50be138dddbedba1c34e7d",
-    "content-hash": "6a0315b8a07e963fbb64c5fdfe4a33bc",
+    "hash": "2ccaf154b13fd8b035a5204d4e88f260",
+    "content-hash": "4adcfac264db278250aebd9b2544b129",
     "packages": [
-        {
-            "name": "bower-asset/bootstrap",
-            "version": "v3.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
-                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.9.1"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "less/bootstrap.less",
-                    "dist/js/bootstrap.js"
-                ],
-                "bower-asset-ignore": [
-                    "/.*",
-                    "_config.yml",
-                    "CNAME",
-                    "composer.json",
-                    "CONTRIBUTING.md",
-                    "docs",
-                    "js/tests",
-                    "test-infra"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "keywords": [
-                "css",
-                "framework",
-                "front-end",
-                "js",
-                "less",
-                "mobile-first",
-                "responsive",
-                "web"
-            ]
-        },
-        {
-            "name": "bower-asset/fontawesome",
-            "version": "v4.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "less/font-awesome.less",
-                    "scss/font-awesome.scss"
-                ],
-                "bower-asset-ignore": [
-                    "*/.*",
-                    "*.json",
-                    "src",
-                    "*.yml",
-                    "Gemfile",
-                    "Gemfile.lock",
-                    "*.md"
-                ]
-            },
-            "license": [
-                "OFL-1.1",
-                "MIT",
-                "CC-BY-3.0"
-            ],
-            "description": "Font Awesome"
-        },
-        {
-            "name": "bower-asset/jquery",
-            "version": "2.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "dist/jquery.js",
-                "bower-asset-ignore": [
-                    "package.json"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "browser",
-                "javascript",
-                "jquery",
-                "library"
-            ]
-        },
-        {
-            "name": "bower-asset/jquery.inputmask",
-            "version": "3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/5a72c563b502b8e05958a524cdfffafe9987be38",
-                "reference": "5a72c563b502b8e05958a524cdfffafe9987be38",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.7"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "./dist/inputmask/inputmask.js"
-                ],
-                "bower-asset-ignore": [
-                    "**/*",
-                    "!dist/*",
-                    "!dist/inputmask/*",
-                    "!dist/min/*",
-                    "!dist/min/inputmask/*",
-                    "!extra/bindings/*",
-                    "!extra/dependencyLibs/*",
-                    "!extra/phone-codes/*"
-                ]
-            },
-            "license": [
-                "http://opensource.org/licenses/mit-license.php"
-            ],
-            "description": "jquery.inputmask is a jquery plugin which create an input mask.",
-            "keywords": [
-                "form",
-                "input",
-                "inputmask",
-                "jquery",
-                "mask",
-                "plugins"
-            ]
-        },
-        {
-            "name": "bower-asset/punycode",
-            "version": "v1.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bestiejs/punycode.js.git",
-                "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bestiejs/punycode.js/zipball/38c8d3131a82567bfef18da09f7f4db68c84f8a3",
-                "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "punycode.js",
-                "bower-asset-ignore": [
-                    "coverage",
-                    "tests",
-                    ".*",
-                    "component.json",
-                    "Gruntfile.js",
-                    "node_modules",
-                    "package.json"
-                ]
-            }
-        },
-        {
-            "name": "bower-asset/yii2-pjax",
-            "version": "v2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "60728da6ade5879e807a49ce59ef9a72039b8978"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/60728da6ade5879e807a49ce59ef9a72039b8978",
-                "reference": "60728da6ade5879e807a49ce59ef9a72039b8978",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.8"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "./jquery.pjax.js",
-                "bower-asset-ignore": [
-                    ".travis.yml",
-                    "Gemfile",
-                    "Gemfile.lock",
-                    "CONTRIBUTING.md",
-                    "vendor/",
-                    "script/",
-                    "test/"
-                ]
-            },
-            "license": [
-                "MIT"
-            ]
-        },
         {
             "name": "cebe/markdown",
             "version": "1.1.0",
@@ -298,12 +73,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "5e15d03558915c10e595a15beb5b23b51c88f2ae"
+                "reference": "1181b885949cd89bd093edd91724396cae22d460"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/5e15d03558915c10e595a15beb5b23b51c88f2ae",
-                "reference": "5e15d03558915c10e595a15beb5b23b51c88f2ae",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/1181b885949cd89bd093edd91724396cae22d460",
+                "reference": "1181b885949cd89bd093edd91724396cae22d460",
                 "shasum": ""
             },
             "require": {
@@ -337,7 +112,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2016-05-21 16:51:16"
+            "time": "2016-05-22 18:26:13"
         },
         {
             "name": "cookyii/module-account",
@@ -345,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "52813790fc8d054529b11e4daa9c8d6969297eb9"
+                "reference": "eb147fcad74bbf26ad352f4416f2c832a479e827"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/52813790fc8d054529b11e4daa9c8d6969297eb9",
-                "reference": "52813790fc8d054529b11e4daa9c8d6969297eb9",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/eb147fcad74bbf26ad352f4416f2c832a479e827",
+                "reference": "eb147fcad74bbf26ad352f4416f2c832a479e827",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +163,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2016-04-06 13:16:46"
+            "time": "2016-05-22 18:26:37"
         },
         {
             "name": "cookyii/module-client",
@@ -396,12 +171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-client.git",
-                "reference": "4e453c446b1b8744bb30dfbb795dd0b81be9bf90"
+                "reference": "7382a04ca1b693fe08337fd3482679c88e69479c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-client/zipball/4e453c446b1b8744bb30dfbb795dd0b81be9bf90",
-                "reference": "4e453c446b1b8744bb30dfbb795dd0b81be9bf90",
+                "url": "https://api.github.com/repos/cookyii/module-client/zipball/7382a04ca1b693fe08337fd3482679c88e69479c",
+                "reference": "7382a04ca1b693fe08337fd3482679c88e69479c",
                 "shasum": ""
             },
             "require": {
@@ -442,7 +217,7 @@
                 "module",
                 "yii2"
             ],
-            "time": "2016-03-22 20:39:13"
+            "time": "2016-05-22 18:36:50"
         },
         {
             "name": "cookyii/module-feed",
@@ -450,12 +225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-feed.git",
-                "reference": "a3f4848418e6e3bed9bf40781dff3c64a7a13299"
+                "reference": "6055a2d497d88aa55a0b3b793bb338e37b3b6e9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/a3f4848418e6e3bed9bf40781dff3c64a7a13299",
-                "reference": "a3f4848418e6e3bed9bf40781dff3c64a7a13299",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/6055a2d497d88aa55a0b3b793bb338e37b3b6e9c",
+                "reference": "6055a2d497d88aa55a0b3b793bb338e37b3b6e9c",
                 "shasum": ""
             },
             "require": {
@@ -493,7 +268,7 @@
                 "news",
                 "yii2"
             ],
-            "time": "2016-03-22 20:39:27"
+            "time": "2016-05-22 18:37:14"
         },
         {
             "name": "cookyii/module-media",
@@ -554,12 +329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-page.git",
-                "reference": "9dd37e05695cffff1ccb49b8b8adee12b4bd5d74"
+                "reference": "667dacaf7076fe7c2e22a9b18f38acc992f8df82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-page/zipball/9dd37e05695cffff1ccb49b8b8adee12b4bd5d74",
-                "reference": "9dd37e05695cffff1ccb49b8b8adee12b4bd5d74",
+                "url": "https://api.github.com/repos/cookyii/module-page/zipball/667dacaf7076fe7c2e22a9b18f38acc992f8df82",
+                "reference": "667dacaf7076fe7c2e22a9b18f38acc992f8df82",
                 "shasum": ""
             },
             "require": {
@@ -596,7 +371,7 @@
                 "static",
                 "yii2"
             ],
-            "time": "2016-02-14 22:59:23"
+            "time": "2016-05-22 18:37:44"
         },
         {
             "name": "cookyii/module-postman",
@@ -604,12 +379,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-postman.git",
-                "reference": "c22b37aaf7ffb636fffedcd93a04fc62cb5a2df3"
+                "reference": "5b1d34199fed5935170e408b7e6beb9b77f6a8e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/c22b37aaf7ffb636fffedcd93a04fc62cb5a2df3",
-                "reference": "c22b37aaf7ffb636fffedcd93a04fc62cb5a2df3",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/5b1d34199fed5935170e408b7e6beb9b77f6a8e9",
+                "reference": "5b1d34199fed5935170e408b7e6beb9b77f6a8e9",
                 "shasum": ""
             },
             "require": {
@@ -646,7 +421,7 @@
                 "queue",
                 "yii2"
             ],
-            "time": "2016-03-22 20:39:55"
+            "time": "2016-05-22 18:38:04"
         },
         {
             "name": "cookyii/module-translation",
@@ -1398,56 +1173,6 @@
                 "yii2"
             ],
             "time": "2015-09-23 17:26:02"
-        },
-        {
-            "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5",
-                "reference": "3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.6"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                },
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\bootstrap\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com"
-                }
-            ],
-            "description": "The Twitter Bootstrap extension for the Yii framework",
-            "keywords": [
-                "bootstrap",
-                "yii2"
-            ],
-            "time": "2016-03-17 03:29:28"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -3516,6 +3241,56 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2016-03-29 19:00:15"
+        },
+        {
+            "name": "yiisoft/yii2-bootstrap",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+                "reference": "3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5",
+                "reference": "3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\bootstrap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                }
+            ],
+            "description": "The Twitter Bootstrap extension for the Yii framework",
+            "keywords": [
+                "bootstrap",
+                "yii2"
+            ],
+            "time": "2016-03-17 03:29:28"
         },
         {
             "name": "yiisoft/yii2-codeception",
