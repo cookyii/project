@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "eb147fcad74bbf26ad352f4416f2c832a479e827"
+                "reference": "fa4805ce255a8ba6acba30bd5bb0d72725b69d7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/eb147fcad74bbf26ad352f4416f2c832a479e827",
-                "reference": "eb147fcad74bbf26ad352f4416f2c832a479e827",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/fa4805ce255a8ba6acba30bd5bb0d72725b69d7f",
+                "reference": "fa4805ce255a8ba6acba30bd5bb0d72725b69d7f",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +163,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2016-05-22 18:26:37"
+            "time": "2016-05-22 19:52:47"
         },
         {
             "name": "cookyii/module-client",
@@ -171,12 +171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-client.git",
-                "reference": "7382a04ca1b693fe08337fd3482679c88e69479c"
+                "reference": "d42adb9b39c1e56d79503f2b13fb092ef44d3f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-client/zipball/7382a04ca1b693fe08337fd3482679c88e69479c",
-                "reference": "7382a04ca1b693fe08337fd3482679c88e69479c",
+                "url": "https://api.github.com/repos/cookyii/module-client/zipball/d42adb9b39c1e56d79503f2b13fb092ef44d3f19",
+                "reference": "d42adb9b39c1e56d79503f2b13fb092ef44d3f19",
                 "shasum": ""
             },
             "require": {
@@ -217,7 +217,7 @@
                 "module",
                 "yii2"
             ],
-            "time": "2016-05-22 18:36:50"
+            "time": "2016-05-22 19:53:24"
         },
         {
             "name": "cookyii/module-feed",
@@ -225,12 +225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-feed.git",
-                "reference": "6055a2d497d88aa55a0b3b793bb338e37b3b6e9c"
+                "reference": "eea7da812a6774c987061a310dd75237db39ab42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/6055a2d497d88aa55a0b3b793bb338e37b3b6e9c",
-                "reference": "6055a2d497d88aa55a0b3b793bb338e37b3b6e9c",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/eea7da812a6774c987061a310dd75237db39ab42",
+                "reference": "eea7da812a6774c987061a310dd75237db39ab42",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +268,7 @@
                 "news",
                 "yii2"
             ],
-            "time": "2016-05-22 18:37:14"
+            "time": "2016-05-22 19:54:02"
         },
         {
             "name": "cookyii/module-media",
@@ -329,12 +329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-page.git",
-                "reference": "667dacaf7076fe7c2e22a9b18f38acc992f8df82"
+                "reference": "24440ae3d8312aad1fb633a742638bda64eb0aa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-page/zipball/667dacaf7076fe7c2e22a9b18f38acc992f8df82",
-                "reference": "667dacaf7076fe7c2e22a9b18f38acc992f8df82",
+                "url": "https://api.github.com/repos/cookyii/module-page/zipball/24440ae3d8312aad1fb633a742638bda64eb0aa2",
+                "reference": "24440ae3d8312aad1fb633a742638bda64eb0aa2",
                 "shasum": ""
             },
             "require": {
@@ -371,7 +371,7 @@
                 "static",
                 "yii2"
             ],
-            "time": "2016-05-22 18:37:44"
+            "time": "2016-05-22 19:54:34"
         },
         {
             "name": "cookyii/module-postman",
@@ -379,12 +379,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-postman.git",
-                "reference": "5b1d34199fed5935170e408b7e6beb9b77f6a8e9"
+                "reference": "04a0559bac55abeb3ca47d1254485290d6971484"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/5b1d34199fed5935170e408b7e6beb9b77f6a8e9",
-                "reference": "5b1d34199fed5935170e408b7e6beb9b77f6a8e9",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/04a0559bac55abeb3ca47d1254485290d6971484",
+                "reference": "04a0559bac55abeb3ca47d1254485290d6971484",
                 "shasum": ""
             },
             "require": {
@@ -421,7 +421,7 @@
                 "queue",
                 "yii2"
             ],
-            "time": "2016-05-22 18:38:04"
+            "time": "2016-05-22 19:55:09"
         },
         {
             "name": "cookyii/module-translation",
@@ -429,12 +429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-translation.git",
-                "reference": "7f80c7653eef8d57bf03c04cd43ecfe4f6cda062"
+                "reference": "40e06812c51c6303d1de18a18353ad19654e74ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-translation/zipball/7f80c7653eef8d57bf03c04cd43ecfe4f6cda062",
-                "reference": "7f80c7653eef8d57bf03c04cd43ecfe4f6cda062",
+                "url": "https://api.github.com/repos/cookyii/module-translation/zipball/40e06812c51c6303d1de18a18353ad19654e74ba",
+                "reference": "40e06812c51c6303d1de18a18353ad19654e74ba",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +469,7 @@
                 "static",
                 "yii2"
             ],
-            "time": "2016-01-03 18:49:29"
+            "time": "2016-05-22 19:55:43"
         },
         {
             "name": "ezyang/htmlpurifier",
