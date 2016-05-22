@@ -29,8 +29,7 @@
     "bower-asset/jquery.inputmask": "*",
     "bower-asset/punycode": "*",
     "bower-asset/yii2-pjax": "*",
-    "bower-asset/bootstrap": "*",
-    "bower-asset/fontawesome": "*"
+    "bower-asset/bootstrap": "*"
   },
   "require": {
     "php": ">=5.4.0",
@@ -52,6 +51,7 @@
     "cookyii/module-media": "dev-master",
 
     "rmrevin/yii2-fontawesome": "~2.12",
+    "rmrevin/yii2-ionicon": "~1.1",
     "rmrevin/yii2-socicon": "~1.0",
     "rmrevin/yii2-minify-view": "~1.9",
     "rmrevin/yii2-rbac-command": "~1.3",
