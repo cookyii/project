@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f651a2a0dfa7d6e24a8545d65342b1ab",
-    "content-hash": "badf7d1704f2eb0ce41584464468b162",
+    "hash": "4198dfcd86582a5b2817af97fe42d808",
+    "content-hash": "588eb9145e9a28520582ecf315dc1d77",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "fa4805ce255a8ba6acba30bd5bb0d72725b69d7f"
+                "reference": "4528a52ea0ec50b6a706e6b84c63720eec8db855"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/fa4805ce255a8ba6acba30bd5bb0d72725b69d7f",
-                "reference": "fa4805ce255a8ba6acba30bd5bb0d72725b69d7f",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/4528a52ea0ec50b6a706e6b84c63720eec8db855",
+                "reference": "4528a52ea0ec50b6a706e6b84c63720eec8db855",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +163,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2016-05-22 19:52:47"
+            "time": "2016-05-24 18:38:34"
         },
         {
             "name": "cookyii/module-client",
@@ -814,16 +814,16 @@
         },
         {
             "name": "rmrevin/yii2-minify-view",
-            "version": "1.10.0",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-minify-view.git",
-                "reference": "2fd39c2220455d4432c3c7379e135da72474cddb"
+                "reference": "5d8d2a56fc98cd4166d3fcfa915855224e7af7eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/2fd39c2220455d4432c3c7379e135da72474cddb",
-                "reference": "2fd39c2220455d4432c3c7379e135da72474cddb",
+                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/5d8d2a56fc98cd4166d3fcfa915855224e7af7eb",
+                "reference": "5d8d2a56fc98cd4166d3fcfa915855224e7af7eb",
                 "shasum": ""
             },
             "require": {
@@ -855,7 +855,7 @@
                 "view",
                 "yii2"
             ],
-            "time": "2016-05-22 20:13:33"
+            "time": "2016-05-22 22:02:15"
         },
         {
             "name": "rmrevin/yii2-power-migration",
