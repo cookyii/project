@@ -73,12 +73,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "13f72ea116923f8541911f3151a0886348e4352e"
+                "reference": "f6593389339e0c8d397640c58ece2a028aad4016"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/13f72ea116923f8541911f3151a0886348e4352e",
-                "reference": "13f72ea116923f8541911f3151a0886348e4352e",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/f6593389339e0c8d397640c58ece2a028aad4016",
+                "reference": "f6593389339e0c8d397640c58ece2a028aad4016",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2016-05-24 19:15:08"
+            "time": "2016-05-24 20:19:59"
         },
         {
             "name": "cookyii/module-account",
@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "881c3b5ee47a195b5ee83a9362c0ec80f345634d"
+                "reference": "95e2e85f24ac1c450b9e01fd69bc07be76c20e5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/881c3b5ee47a195b5ee83a9362c0ec80f345634d",
-                "reference": "881c3b5ee47a195b5ee83a9362c0ec80f345634d",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/95e2e85f24ac1c450b9e01fd69bc07be76c20e5b",
+                "reference": "95e2e85f24ac1c450b9e01fd69bc07be76c20e5b",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +163,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2016-05-24 19:25:13"
+            "time": "2016-05-24 20:33:22"
         },
         {
             "name": "cookyii/module-client",
