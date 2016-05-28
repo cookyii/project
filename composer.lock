@@ -73,12 +73,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "c0d8d81621498c2e1c65d4632b8900efccc6730b"
+                "reference": "d66cd18e466bd945d597fe566ab428fe99b075b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/c0d8d81621498c2e1c65d4632b8900efccc6730b",
-                "reference": "c0d8d81621498c2e1c65d4632b8900efccc6730b",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/d66cd18e466bd945d597fe566ab428fe99b075b2",
+                "reference": "d66cd18e466bd945d597fe566ab428fe99b075b2",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2016-05-26 19:13:07"
+            "time": "2016-05-26 19:35:06"
         },
         {
             "name": "cookyii/module-account",
@@ -276,12 +276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-media.git",
-                "reference": "3aba492af33008d49e39ed61790f0e68c01cf3eb"
+                "reference": "ab4d5eddd5d4273d2c89c3fb807d9d4abe8463f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-media/zipball/3aba492af33008d49e39ed61790f0e68c01cf3eb",
-                "reference": "3aba492af33008d49e39ed61790f0e68c01cf3eb",
+                "url": "https://api.github.com/repos/cookyii/module-media/zipball/ab4d5eddd5d4273d2c89c3fb807d9d4abe8463f3",
+                "reference": "ab4d5eddd5d4273d2c89c3fb807d9d4abe8463f3",
                 "shasum": ""
             },
             "require": {
@@ -321,7 +321,7 @@
                 "video",
                 "yii2"
             ],
-            "time": "2016-02-14 22:59:06"
+            "time": "2016-05-28 16:06:37"
         },
         {
             "name": "cookyii/module-page",
