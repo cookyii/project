@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e3e243729f885fdd530c0821b8883396",
-    "content-hash": "142b140ef2e7b0c244ecdc46e995060c",
+    "hash": "ca81eaf58557dcc8e98a6b47b86c227a",
+    "content-hash": "68e37c984cb5f9e9847576cb0bf72110",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -73,12 +73,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "36429a0e38a4f07fe5d5068c318e3815607147d1"
+                "reference": "687bbca0ca17a89fd46788756ec665ee8a3bf936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/36429a0e38a4f07fe5d5068c318e3815607147d1",
-                "reference": "36429a0e38a4f07fe5d5068c318e3815607147d1",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/687bbca0ca17a89fd46788756ec665ee8a3bf936",
+                "reference": "687bbca0ca17a89fd46788756ec665ee8a3bf936",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2016-06-19 16:23:33"
+            "time": "2016-06-28 10:58:57"
         },
         {
             "name": "cookyii/module-account",
@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-account.git",
-                "reference": "b15bb66dcc66ebaf52eb5551341c93dee3ab11be"
+                "reference": "f4903a72c53323794aed6130455759c60e14cf93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-account/zipball/b15bb66dcc66ebaf52eb5551341c93dee3ab11be",
-                "reference": "b15bb66dcc66ebaf52eb5551341c93dee3ab11be",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/f4903a72c53323794aed6130455759c60e14cf93",
+                "reference": "f4903a72c53323794aed6130455759c60e14cf93",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +163,7 @@
                 "user",
                 "yii2"
             ],
-            "time": "2016-06-19 16:23:53"
+            "time": "2016-06-28 10:59:14"
         },
         {
             "name": "cookyii/module-client",
@@ -171,12 +171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-client.git",
-                "reference": "15442d1c1b6c054ed4edcb8670fb570f7cb5f823"
+                "reference": "d7c90ff5c3547da5bd6b58a2e395056cff94fe4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-client/zipball/15442d1c1b6c054ed4edcb8670fb570f7cb5f823",
-                "reference": "15442d1c1b6c054ed4edcb8670fb570f7cb5f823",
+                "url": "https://api.github.com/repos/cookyii/module-client/zipball/d7c90ff5c3547da5bd6b58a2e395056cff94fe4a",
+                "reference": "d7c90ff5c3547da5bd6b58a2e395056cff94fe4a",
                 "shasum": ""
             },
             "require": {
@@ -217,7 +217,7 @@
                 "module",
                 "yii2"
             ],
-            "time": "2016-06-19 16:24:07"
+            "time": "2016-06-28 10:59:28"
         },
         {
             "name": "cookyii/module-feed",
@@ -225,12 +225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-feed.git",
-                "reference": "d3393fec799ee7b64cea1a7f69feaec8b5000fc1"
+                "reference": "fd906012d2cae0cec82d5b55326848da3550b726"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/d3393fec799ee7b64cea1a7f69feaec8b5000fc1",
-                "reference": "d3393fec799ee7b64cea1a7f69feaec8b5000fc1",
+                "url": "https://api.github.com/repos/cookyii/module-feed/zipball/fd906012d2cae0cec82d5b55326848da3550b726",
+                "reference": "fd906012d2cae0cec82d5b55326848da3550b726",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +268,7 @@
                 "news",
                 "yii2"
             ],
-            "time": "2016-06-19 16:24:20"
+            "time": "2016-06-28 10:59:40"
         },
         {
             "name": "cookyii/module-media",
@@ -276,12 +276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-media.git",
-                "reference": "8be1181561f2e8fc6582eb8ab120b966eecf8f7a"
+                "reference": "a0bab690eaf32d1dbd0f9559523677f7d464eb05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-media/zipball/8be1181561f2e8fc6582eb8ab120b966eecf8f7a",
-                "reference": "8be1181561f2e8fc6582eb8ab120b966eecf8f7a",
+                "url": "https://api.github.com/repos/cookyii/module-media/zipball/a0bab690eaf32d1dbd0f9559523677f7d464eb05",
+                "reference": "a0bab690eaf32d1dbd0f9559523677f7d464eb05",
                 "shasum": ""
             },
             "require": {
@@ -321,7 +321,7 @@
                 "video",
                 "yii2"
             ],
-            "time": "2016-06-19 16:24:34"
+            "time": "2016-06-28 10:59:52"
         },
         {
             "name": "cookyii/module-page",
@@ -814,16 +814,16 @@
         },
         {
             "name": "rmrevin/yii2-minify-view",
-            "version": "1.10.2",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-minify-view.git",
-                "reference": "371f090f569145691a5d50abb645402c10ba21a8"
+                "reference": "65d63bbb5ede925054d5f22fb0b440889ca96a7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/371f090f569145691a5d50abb645402c10ba21a8",
-                "reference": "371f090f569145691a5d50abb645402c10ba21a8",
+                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/65d63bbb5ede925054d5f22fb0b440889ca96a7e",
+                "reference": "65d63bbb5ede925054d5f22fb0b440889ca96a7e",
                 "shasum": ""
             },
             "require": {
@@ -855,7 +855,7 @@
                 "view",
                 "yii2"
             ],
-            "time": "2016-06-06 12:44:44"
+            "time": "2016-06-23 20:33:07"
         },
         {
             "name": "rmrevin/yii2-rbac-command",
@@ -946,47 +946,6 @@
                 "yii"
             ],
             "time": "2016-05-20 18:20:57"
-        },
-        {
-            "name": "samdark/sitemap",
-            "version": "2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/samdark/sitemap.git",
-                "reference": "4cd7b6d7c1bf4031fee381f96db8fc48a0cb23cc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/samdark/sitemap/zipball/4cd7b6d7c1bf4031fee381f96db8fc48a0cb23cc",
-                "reference": "4cd7b6d7c1bf4031fee381f96db8fc48a0cb23cc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "samdark\\sitemap\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Makarov",
-                    "email": "sam@rmcreative.ru",
-                    "homepage": "http://rmcreative.ru/"
-                }
-            ],
-            "description": "Sitemap and sitemap index builder",
-            "homepage": "https://github.com/samdark/sitemap",
-            "keywords": [
-                "Sitemap"
-            ],
-            "time": "2016-04-28 23:16:42"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3604,7 +3563,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=5.5.0"
     },
     "platform-dev": []
 }
