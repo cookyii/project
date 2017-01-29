@@ -378,12 +378,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/module-postman.git",
-                "reference": "aa1792a6779ad8100f6ffa7a40a70a1cabcf93c1"
+                "reference": "1139f3bf71cd46204c58e1f2c0638e555df12d6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/aa1792a6779ad8100f6ffa7a40a70a1cabcf93c1",
-                "reference": "aa1792a6779ad8100f6ffa7a40a70a1cabcf93c1",
+                "url": "https://api.github.com/repos/cookyii/module-postman/zipball/1139f3bf71cd46204c58e1f2c0638e555df12d6f",
+                "reference": "1139f3bf71cd46204c58e1f2c0638e555df12d6f",
                 "shasum": ""
             },
             "require": {
@@ -420,7 +420,7 @@
                 "queue",
                 "yii2"
             ],
-            "time": "2017-01-29 10:29:00"
+            "time": "2017-01-29 11:04:16"
         },
         {
             "name": "cookyii/module-translation",
