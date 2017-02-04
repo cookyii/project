@@ -18,7 +18,6 @@ class PushTask extends \cookyii\build\tasks\CommandTask
     {
         parent::init();
 
-        $cmd = 'set -e && cd {path} && git add . && git commit -am "Update" && git push origin master';
         $cmd = <<<BASH
 cd {path}
 git add .
